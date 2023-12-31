@@ -1,4 +1,4 @@
-import _WebsiteBuilder
+import WebsiteBuilder
 
 protocol ThemeTest: WebPage {
     var js: Bool { get }

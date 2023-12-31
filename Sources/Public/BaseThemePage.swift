@@ -1,4 +1,4 @@
-import _WebsiteBuilder
+import WebsiteBuilder
 
 protocol BaseThemePage: WebPage {
     var themedContent: String { get }

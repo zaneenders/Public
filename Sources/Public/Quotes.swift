@@ -1,4 +1,4 @@
-import _WebsiteBuilder
+import WebsiteBuilder
 
 struct Qoutes: BaseThemePage, WebPage {
 

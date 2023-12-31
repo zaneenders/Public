@@ -1,4 +1,4 @@
-import _WebsiteBuilder
+import WebsiteBuilder
 
 public struct ThemeTestPage: ThemeTest, RootPage {
     public init() {}

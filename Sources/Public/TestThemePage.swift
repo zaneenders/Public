@@ -1,6 +1,8 @@
 import WebsiteBuilder
 
 public struct ThemeTestPage: ThemeTest, RootPage {
+    let js: Bool = false
+    let mathPage: Bool = false
     public init() {}
 
     public var subPages: [WebPage.Type] {

@@ -6,6 +6,12 @@ protocol BaseThemePage: WebPage {
 
 extension BaseThemePage {
     var contents: String {
-        themedContent
+        """
+        <!DOCTYPE html>
+        <html lang="en">
+        \(headHTML)
+        <body>\(themedContent)</body>
+        </html>
+        """
     }
 }

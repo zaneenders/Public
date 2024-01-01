@@ -2,6 +2,8 @@
 
 import PackageDescription
 
+// TODO move blog post into here
+
 let package = Package(
     name: "Public",
     products: [

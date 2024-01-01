@@ -6,18 +6,16 @@ protocol ThemeTest: WebPage {
 }
 
 /// Default Content and Configuration
-extension ThemeTest {
-    var title: String {
-        "Zane Enders | Home"
-    }
+var title: String {
+    "Zane Enders | Home"
+}
 
-    var body: String {
-        NavigationBar().contents
-            + buildH1("Zane Enders")
-            + "Zane was here ->"
-            + "<div id=\"tan\"><h1>Embossed in tan</h1></div>"
-            + button("Look I'm a button")
-    }
+var body: String {
+    NavigationBar().contents
+        + buildH1("Zane Enders")
+        + "Zane was here ->"
+        + "<div id=\"tan\"><h1>Embossed in tan</h1></div>"
+        + button("Look I'm a button")
 }
 
 private let buttonCSS = """
@@ -77,67 +75,63 @@ private var otherCSS: String {
     }
     """
 }
-extension ThemeTest {
 
-    func button(_ str: String) -> String {
-        return
-            "<button type=\"button\" \(innerCSS(buttonCSS))>Click Me!</button> "
-    }
+func button(_ str: String) -> String {
+    return
+        "<button type=\"button\" \(innerCSS(buttonCSS))>Click Me!</button> "
+}
 
-    func buildH1(_ str: String) -> String {
-        let style = """
-            font-size: 6em;
-            font-family: Yellowtail;
-            background-color: #666666;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
-            """
-        return "<h1 style = \" \(style) \">\(str)</h1>"
-    }
-
-    var js: Bool {
-        false
-    }
-
-    var mathPage: Bool {
-        false
-    }
-
-    var bodyStyle: String {
+func buildH1(_ str: String) -> String {
+    let style = """
+        font-size: 6em;
+        font-family: Yellowtail;
+        background-color: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
         """
-        style = \" text-align: center; \"
-        """
-    }
+    return "<h1 style = \" \(style) \">\(str)</h1>"
+}
 
-    var titleHTML: String {
-        "<title>\(title)</title>"
-    }
+var js: Bool {
+    false
+}
 
-    var bodyHTML: String {
-        "<body  \(innerCSS(bodyCSS)) >\(body)</body>"
-    }
+var mathPage: Bool {
+    false
+}
 
-    func innerCSS(_ str: String) -> String {
-        "style = \" \(str) \""
-    }
-    var headHTML: String {
-        """
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/x-icon" href="/favicon.ico">
-            \(titleHTML)
-            \(scriptHTML)
-        </head>
-        """
-    }
+var bodyStyle: String {
+    """
+    style = \" text-align: center; \"
+    """
+}
 
-    var scriptHTML: String {
-        """
-        <script>console.log("I don't like Javascript or Web Development - Zane")</script>\(!js ? "" : """
+var bodyHTML: String {
+    "<body  \(innerCSS(bodyCSS)) >\(body)</body>"
+}
+
+func innerCSS(_ str: String) -> String {
+    "style = \" \(str) \""
+}
+
+var headHTML: String {
+    """
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        \(titleHTML)
+        \(scriptHTML)
+    </head>
+    """
+}
+
+var scriptHTML: String {
+    """
+    <script>console.log("I don't like Javascript or Web Development - Zane")</script>\(!js ? "" : """
         <script src="/script.js" type="text/javascript" charset="utf-8"></script>
         """)\(!mathPage ? "" : """
         <script>
@@ -153,6 +147,9 @@ extension ThemeTest {
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
         </script>
         """)
-        """
-    }
+    """
+}
+
+var titleHTML: String {
+    "<title>\(title)</title>"
 }

@@ -7,9 +7,19 @@ protocol BaseThemePage: WebPage {
     var title: String { get }
 }
 
-extension BaseThemePage {
+extension BaseThemePage { 
 
-    
+    var js: Bool {
+        false
+    }
+
+    var mathPage: Bool {
+        false
+    }
+
+    var title: String {
+        "Zane Enders | \(Self.self)"
+    }
 
     public var contents: String {
         """

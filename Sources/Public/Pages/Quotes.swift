@@ -2,18 +2,7 @@ import WebsiteBuilder
 
 struct Qoutes: BaseThemePage {
 
-    let js: Bool = false
-    let mathPage: Bool = false
-
-    var title: String {
-        "Zane Enders | Qoutes"
-    }
-
     var themedContent: String {
-        list
-    }
-
-    var list: String {
         """
         You have to be in a bin so pick the bin. 
         The meaning of life is self respect.

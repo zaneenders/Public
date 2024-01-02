@@ -31,7 +31,34 @@ public enum PageBuilder {
     }
 }
 
-public struct TestPage: WebPage {
+public struct TestPage: BaseThemePage {
+
+    var themedContent: String {
+        body
+    }
+
+    // Maybe move this to a protocol
+    // This is currently overiding BaseThemePage
+    public var contents: String {
+        """
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>\(title)</title>
+          <style>
+          \(css)
+          </style>
+        </head>
+
+        <body>
+        \(body)
+        </body>
+        </html>
+        """
+    }
 
     let background = Colors.xTerm256(233)
     let buttonIdel = Colors.xTerm256(220)
@@ -144,33 +171,7 @@ public struct TestPage: WebPage {
         """
     }
 
-    var tile: String {
-        "Document"
-    }
-
-    // Maybe move this to a protocol
-    public var contents: String {
-        """
-        <!DOCTYPE html>
-        <html lang="en">
-
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>\(tile)</title>
-          <style>
-          \(css)
-          </style>
-        </head>
-
-        <body>
-        \(body)
-        </body>
-        </html>
-        """
-    }
-
-    public init() {}
+       public init() {}
 }
 
 struct StyleSates: HasStyle {

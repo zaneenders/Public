@@ -1,8 +1,6 @@
 import WebsiteBuilder
 
 public struct Home: BaseThemePage, RootPage {
-    let js: Bool = false
-    let mathPage: Bool = false
     public init() {}
 
     var title: String {

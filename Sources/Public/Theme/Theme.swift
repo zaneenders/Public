@@ -1,20 +1,20 @@
 import WebsiteBuilder
 
+typealias URLString = String
 enum LinkType {
-    case inner
-    case outer
+    case page(URLString)
+    case site(URLString)
 }
 
-func button(_ str: String, _ type: LinkType) -> String {
-    // "<button type=\"button\" href=\"/Qoutes\" \(CSSClass.typeClass(.button))>Click Me!</button> "
+func button(_ label: String, to type: LinkType) -> String {
     switch type {
-    case .inner:
+    case .page(let url):
         return """
-            <button onclick=" location.href='http://google.com'" \(CSSClass.typeClass(.button))>\(str)</button>
+            <button onclick=" location.href='\(url)'">\(label)</button>
             """
-    case .outer:
+    case .site(let url):
         return """
-            <button onclick=" window.open('http://google.com','_blank')" \(CSSClass.typeClass(.button))>\(str)</button>
+            <button onclick=" window.open('\(url)','_blank')">\(label)</button>
             """
     }
 }

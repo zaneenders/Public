@@ -13,7 +13,7 @@ enum CSSClass: CaseIterable {
             // https://dev.to/nicm42/how-to-make-a-button-looked-like-it-s-staying-pressed-down-58k
             // would like to have state between pages
             let style = """
-                .\(c) {
+                \(c) {
                     display: inline-block;
                     border-radius: 10px;
                     box-shadow: 2px 2px 6px \(Colors.xTerm256(251)), -2px -2px 6px \(Colors.xTerm256(255));
@@ -26,11 +26,11 @@ enum CSSClass: CaseIterable {
                     border-style: solid;
                     border-width: 1px; 
                 }
-                .\(c):hover {
+                \(c):hover {
                     background-color: \(Colors.xTerm256(122));
                     border-color: \(Colors.xTerm256(251));
                 }
-                .\(c):active {
+                \(c):active {
                     box-shadow: 2px 2px 6px \(Colors.xTerm256(255)), -2px -2px 6px \(Colors.xTerm256(251)); 
                     background-color: red;
                 }

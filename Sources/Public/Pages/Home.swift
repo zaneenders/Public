@@ -15,6 +15,6 @@ public struct Home: BaseThemePage, RootPage {
 
     @DivBuilder public var themedContent: String {
         NavigationBar()
-        button("google", .outer)
+        button("google", to: .site("http://google.com"))
     }
 }

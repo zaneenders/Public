@@ -3,7 +3,7 @@ import WebsiteBuilder
 struct NavigationBar: PageComponent {
     var contents: String {
         """
-        <div>\(aTag("Zane Enders",to: "/", CSSClass.typeClass(.button)))</div>
+        <div>\(button("Zane Enders",to:.page("/")))</div>
         <div>\(links)</div>
         """
     }
@@ -17,6 +17,6 @@ struct NavigationBar: PageComponent {
     }
 
     private func wrapLink(_ page: WebPage.Type) -> String {
-        return aTag("\(page)", to: page.url, CSSClass.typeClass(.button))
+        return button("\(page)", to: .page(page.url))
     }
 }

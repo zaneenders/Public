@@ -5,6 +5,10 @@ struct Qoutes: BaseThemePage {
     let js: Bool = false
     let mathPage: Bool = false
 
+    var title: String {
+        "Zane Enders | Qoutes"
+    }
+
     var themedContent: String {
         list
     }

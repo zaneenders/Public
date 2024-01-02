@@ -5,6 +5,10 @@ public struct Home: BaseThemePage, RootPage {
     let mathPage: Bool = false
     public init() {}
 
+    var title: String {
+        "Zane Enders"
+    }
+
     public var subPages: [WebPage.Type] {
         Qoutes.self
         TestPage.self

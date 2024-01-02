@@ -4,14 +4,12 @@ protocol BaseThemePage: WebPage {
     var themedContent: String { get }
     var js: Bool { get }
     var mathPage: Bool { get }
-
+    var title: String { get }
 }
 
 extension BaseThemePage {
 
-    var title: String {
-        "Zane Enders | Home"
-    }
+    
 
     public var contents: String {
         """
@@ -23,7 +21,7 @@ extension BaseThemePage {
         """
     }
 
-    var headHTML: String {
+    private var headHTML: String {
         """
         <head>
             <meta charset="UTF-8">
@@ -38,7 +36,7 @@ extension BaseThemePage {
         """
     }
 
-    var scriptHTML: String {
+    private var scriptHTML: String {
         """
         <script>console.log("I don't like Javascript or Web Development - Zane")</script>\(!js ? "" : """
         <script src="/script.js" type="text/javascript" charset="utf-8"></script>
@@ -59,7 +57,7 @@ extension BaseThemePage {
         """
     }
 
-    var titleHTML: String {
+    private var titleHTML: String {
         "<title>\(title)</title>"
     }
 }

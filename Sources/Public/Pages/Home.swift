@@ -7,7 +7,8 @@ public struct Home: BaseThemePage, RootPage {
 
     public var subPages: [WebPage.Type] {
         Qoutes.self
-        Qoutes.self
+        TestPage.self
+        NeoVim.self
     }
 
     public var themedContent: String {

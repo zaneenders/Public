@@ -23,6 +23,7 @@ enum PodcastLink: Hashable {
     case spotify(URLString)
 
     func makeButton() -> URLString {
+        // TODO use favicon instead of text
         switch self {
         case let .apple(url):
             return button("apple", to: .site(url))

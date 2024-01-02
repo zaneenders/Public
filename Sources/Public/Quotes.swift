@@ -1,6 +1,9 @@
 import WebsiteBuilder
 
-struct Qoutes: BaseThemePage, WebPage {
+struct Qoutes: BaseThemePage {
+
+    let js: Bool = false
+    let mathPage: Bool = false
 
     var themedContent: String {
         list

@@ -2,16 +2,13 @@ import WebsiteBuilder
 
 protocol BaseThemePage: WebPage {
     var themedContent: String { get }
+    var js: Bool { get }
+    var mathPage: Bool { get }
+
 }
 
 extension BaseThemePage {
-    var contents: String {
-        """
-        <!DOCTYPE html>
-        <html lang="en">
-        \(headHTML)
-        <body>\(themedContent)</body>
-        </html>
-        """
+    public var contents: String {
+        themedContent
     }
 }

@@ -9,9 +9,13 @@ struct NavigationBar: PageComponent {
 
     var links: String {
         var out = ""
-        for page in ThemeTestPage().subPages {
-            out.append("\(page.link)")
+        for page in Home().subPages {
+            out.append(wrapLink(page))
         }
         return out
+    }
+
+    private func wrapLink(_ page: WebPage.Type) -> String {
+        return aTag("\(page)", to: page.url, CSSClass.typeClass(.button))
     }
 }

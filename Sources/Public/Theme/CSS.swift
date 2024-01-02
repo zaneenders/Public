@@ -7,7 +7,7 @@ enum CSSClass: CaseIterable {
     case button
     case div
 
-    private static func style(_ c: CSSClass) -> String {
+    fileprivate static func style(_ c: CSSClass) -> String {
         switch c {
         case .button:
             // https://dev.to/nicm42/how-to-make-a-button-looked-like-it-s-staying-pressed-down-58k
@@ -50,15 +50,6 @@ enum CSSClass: CaseIterable {
         }
     }
 
-    static func allStyles() -> String {
-        var out = ""
-        for s in CSSClass.allCases {
-            out.append(CSSClass.style(s))
-            out.append("\n")
-        }
-        return out
-    }
-
     static func typeClass(_ c: CSSClass) -> String {
         return """
             class = "\(c)"
@@ -75,4 +66,14 @@ enum CSSClass: CaseIterable {
             class = "\(list)"
             """
     }
+}
+
+func allStyles() -> String {
+    var out = ""
+    for s in CSSClass.allCases {
+        out.append(CSSClass.style(s))
+        out.append("\n")
+    }
+    // TODO append custom styles here
+    return out
 }

@@ -53,7 +53,7 @@ extension BaseThemePage {
             \(titleHTML)
             \(scriptHTML)
             <style>
-            \(CSSClass.allStyles())
+            \(allStyles())
             </style>
         </head>
         """

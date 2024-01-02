@@ -18,3 +18,7 @@ func button(_ label: String, to type: LinkType) -> String {
             """
     }
 }
+
+func makeButton(_ page: BaseThemePage.Type) -> String {
+    return button("\(page.self)", to: .page(page.url))
+}

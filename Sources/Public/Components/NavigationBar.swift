@@ -3,20 +3,16 @@ import WebsiteBuilder
 struct NavigationBar: PageComponent {
     var contents: String {
         """
-        <div>\(button("Zane Enders",to:.page("/")))</div>
+        <div>\(Home.pageLink)</div>
         <div>\(links)</div>
         """
     }
 
     var links: String {
         var out = ""
-        for page in Home().subPages {
-            out.append(wrapLink(page))
+        for page in Home().pages {
+            out.append(page.pageLink)
         }
         return out
-    }
-
-    private func wrapLink(_ page: WebPage.Type) -> String {
-        return button("\(page)", to: .page(page.url))
     }
 }

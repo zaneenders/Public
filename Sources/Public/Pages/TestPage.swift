@@ -33,7 +33,7 @@ public enum PageBuilder {
 
 public struct TestPage: BaseThemePage {
 
-    var themedContent: String {
+    public var themedContent: String {
         body
     }
 

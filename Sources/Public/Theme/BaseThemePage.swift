@@ -1,23 +1,36 @@
 import WebsiteBuilder
 
-protocol BaseThemePage: WebPage {
+public protocol BaseThemePage: WebPage {
     var themedContent: String { get }
     var js: Bool { get }
     var mathPage: Bool { get }
     var title: String { get }
+    var pages: [BaseThemePage.Type] { get }
 }
 
 extension BaseThemePage {
 
-    var js: Bool {
+    public static var pageLink: String {
+        makeButton(Self.self)
+    }
+
+    public var pages: [BaseThemePage.Type] {
+        []
+    }
+
+    public var subPages: [WebPage.Type] {
+        pages
+    }
+
+    public var js: Bool {
         false
     }
 
-    var mathPage: Bool {
+    public var mathPage: Bool {
         false
     }
 
-    var title: String {
+    public var title: String {
         "Zane Enders | \(Self.self)"
     }
 

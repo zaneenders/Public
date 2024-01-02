@@ -16,6 +16,8 @@ enum CSSClass {
     static func style(_ c: CSSClass) -> String {
         switch c {
         case .button:
+            // https://dev.to/nicm42/how-to-make-a-button-looked-like-it-s-staying-pressed-down-58k
+            // would like to have state between pages
             let style = """
                 .button {
                     border-radius: 10px;

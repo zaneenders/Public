@@ -2,7 +2,8 @@ import WebsiteBuilder
 
 struct Qoutes: BaseThemePage {
 
-    var themedContent: String {
+    @DivBuilder var themedContent: String {
+        NavigationBar()
         """
         You have to be in a bin so pick the bin. 
         The meaning of life is self respect.

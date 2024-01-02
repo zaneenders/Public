@@ -7,7 +7,7 @@ protocol BaseThemePage: WebPage {
     var title: String { get }
 }
 
-extension BaseThemePage { 
+extension BaseThemePage {
 
     var js: Bool {
         false
@@ -40,7 +40,7 @@ extension BaseThemePage {
             \(titleHTML)
             \(scriptHTML)
             <style>
-            \(CSSClass.style(.button))
+            \(CSSClass.allStyles())
             </style>
         </head>
         """

@@ -3,6 +3,7 @@ import WebsiteBuilder
 struct NavigationBar: PageComponent {
     var contents: String {
         """
+        <div>\(aTag("Zane Enders",to: "/", CSSClass.typeClass(.button)))</div>
         <div>\(links)</div>
         """
     }

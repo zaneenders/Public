@@ -171,7 +171,7 @@ public struct TestPage: BaseThemePage {
         """
     }
 
-       public init() {}
+    public init() {}
 }
 
 struct StyleSates: HasStyle {

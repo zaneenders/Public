@@ -10,7 +10,7 @@ extension Podcast: ExternalMeida {
         for link in links {
             out += link.makeButton()
         }
-        return "<div>\(out)<div>"
+        return "<div>\(out)</div>"
     }
 
     var contents: String {

@@ -8,9 +8,10 @@ let links: Set<PodcastLink> = [
 let why =
     "Just better Then I thought it would be and also a new persepctive on many parts of life."
 let podcastLink = Podcast(links)
+
 struct Qoutes: BaseThemePage {
 
-    @DivBuilder var themedContent: String {
+    @_Builder var themedContent: String {
         NavigationBar()
         Qoute(
             "You have to be in a bin so pick the bin", "Andrew Bustamante",

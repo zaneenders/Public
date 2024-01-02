@@ -1,7 +1,43 @@
 import Colors
 import WebsiteBuilder
 
-// TODO seperate built in selectors and custom selectors
+enum CustomCSS: CaseIterable {
+    case card
+    fileprivate static func style(_ c: CustomCSS) -> String {
+        switch c {
+        case .card:
+            """
+            .\(c) {
+                display: inline-block;
+                background-color: red;
+                border-color: \(Colors.xTerm256(0));
+                border-style: solid;
+                border-width: 1px;
+                margin: 1em;
+                padding: 1em;
+            }
+            """
+        }
+    }
+
+    static func typeClass(_ c: CustomCSS) -> String {
+        return """
+            class = "\(c)"
+            """
+    }
+
+    static func typeClass(_ classes: Set<CustomCSS>) -> String {
+        var list = ""
+        for c in classes {
+            list.append("\(c) ")
+        }
+        list = String(list.dropLast())
+        return """
+            class = "\(list)"
+            """
+    }
+}
+
 enum CSSClass: CaseIterable {
     case body
     case button
@@ -49,23 +85,6 @@ enum CSSClass: CaseIterable {
                 """
         }
     }
-
-    static func typeClass(_ c: CSSClass) -> String {
-        return """
-            class = "\(c)"
-            """
-    }
-
-    static func typeClass(_ classes: Set<CSSClass>) -> String {
-        var list = ""
-        for c in classes {
-            list.append("\(c) ")
-        }
-        list = String(list.dropLast())
-        return """
-            class = "\(list)"
-            """
-    }
 }
 
 func allStyles() -> String {
@@ -74,6 +93,9 @@ func allStyles() -> String {
         out.append(CSSClass.style(s))
         out.append("\n")
     }
-    // TODO append custom styles here
+    for s in CustomCSS.allCases {
+        out.append(CustomCSS.style(s))
+        out.append("\n")
+    }
     return out
 }

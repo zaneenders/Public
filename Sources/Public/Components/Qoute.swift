@@ -18,7 +18,7 @@ struct Qoute: PageComponent {
 
     var contents: String {
         """
-        <div>
+        <div \(CustomCSS.typeClass(.card))>
         <div>\(text) - \(person)</div>
         \(link != nil ? link!.htmlView : "")
         </div>

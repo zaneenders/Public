@@ -12,18 +12,25 @@ let package = Package(
             targets: ["Public"])
     ],
     dependencies: [
-        .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder")
+        .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder"),
+        .package(name: "ScribeSystem", path: "../ScribeSystem"),
         /*
         .package(
             url: "https://github.com/zaneenders/_WebsiteBuilder.git",
-            from: "0.1.1")
+            from: "0.1.1"),
+        .package(
+            url: "git@github.com:zaneenders/ScribeSystem.git",
+            from: "0.0.2")
         */
     ],
     targets: [
         .target(
             name: "Public",
             dependencies: [
-                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder")
-            ])
+                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder"),
+                .product(name: "ScribeSystem", package: "ScribeSystem"),
+            ]),
+        .target(name: "Tags"),
+        //.target(name: "ZaneEnders")
     ]
 )

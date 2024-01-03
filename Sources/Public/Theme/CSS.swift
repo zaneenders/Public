@@ -4,18 +4,26 @@ import WebsiteBuilder
 enum CustomCSS: CaseIterable {
     case card
     case blogContent
+}
+
+extension CustomCSS {
+    private static func _cardStyle() -> String {
+        """
+        display: inline-block;
+        background-color: \(Colors.xTerm256(15));
+        box-shadow: inset 2px 2px 6px \(Colors.xTerm256(251)), inset -2px -2px 6px \(Colors.xTerm256(255)); 
+        border-radius: 10px;
+        border-color: \(Colors.xTerm256(15));
+        border-style: solid;
+        border-width: 1px;     
+        """
+    }
     fileprivate static func style(_ c: CustomCSS) -> String {
         switch c {
         case .card:
             """
             .\(c) {
-                display: inline-block;
-                background-color: \(Colors.xTerm256(15));
-                box-shadow: inset 2px 2px 6px \(Colors.xTerm256(251)), inset -2px -2px 6px \(Colors.xTerm256(255)); 
-                border-radius: 10px;
-                border-color: \(Colors.xTerm256(15));
-                border-style: solid;
-                border-width: 1px;
+                \(_cardStyle())
                 margin: 1em;
                 padding: 1em;
             }
@@ -23,17 +31,11 @@ enum CustomCSS: CaseIterable {
         case .blogContent:
             """
             .\(c) {
-                display: inline-block;
-                background-color: \(Colors.xTerm256(15));
-                box-shadow: inset 2px 2px 6px \(Colors.xTerm256(251)), inset -2px -2px 6px \(Colors.xTerm256(255)); 
-                border-radius: 10px;
-                border-color: \(Colors.xTerm256(15));
-                border-style: solid;
-                border-width: 1px;
+                \(_cardStyle())
                 margin: 1em;
                 padding: 0 1em;
             }
-            .\(c) > p {
+            .\(c) > p, h3, h4, h5, h6 {
                 text-align: left;
             }
             """
@@ -62,7 +64,9 @@ enum CSSClass: CaseIterable {
     case body
     case button
     case div
+}
 
+extension CSSClass {
     fileprivate static func style(_ c: CSSClass) -> String {
         switch c {
         case .button:

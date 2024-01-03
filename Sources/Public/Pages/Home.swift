@@ -18,7 +18,13 @@ public struct Home: BaseThemePage, RootPage {
         Blog.self,
     ]
 
-    @DivBuilder public var themedContent: String {
-        button("google", to: .site("http://google.com"))
+    public var themedContent: String {
+        "<div \(CustomCSS.typeClass(.blogContent))>\(cardContent)</div>"
+    }
+
+    var cardContent: String {
+        """
+        Hello I'm zane
+        """
     }
 }

@@ -13,7 +13,6 @@ public struct Home: BaseThemePage, RootPage {
 
     public var pages: [BaseThemePage.Type] = [
         Qoutes.self,
-        TestPage.self,
         NeoVim.self,
         Blog.self,
     ]

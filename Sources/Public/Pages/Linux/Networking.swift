@@ -1,0 +1,4 @@
+/*
+to access ip address
+ip addr show
+*/

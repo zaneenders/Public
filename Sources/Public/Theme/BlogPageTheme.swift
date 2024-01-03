@@ -5,7 +5,7 @@ protocol BlogPageTheme: BaseThemePage {
 }
 
 extension BlogPageTheme {
-    var themedContent: String {
+    public var themedContent: String {
         "<div \(CustomCSS.typeClass(.blogContent))>\(blogContent)</div>"
     }
 }

@@ -13,11 +13,11 @@ struct _TODO: PageComponent {
     }
 }
 
-public struct NeoVim: BaseThemePage {
+public struct NeoVim: BlogPageTheme {
 
     public init() {}
 
-    @DivBuilder public var themedContent: String {
+    public var blogContent: String {
         """
         Well I have gone down the rabbit hole of \(newTabLink("NewVim", to: "https://neovim.io/")) and am currenlty writing this from it. 
         So far I have to say I enjoy it. There is a lot of compelxity I just took on but so far I am able to edit text and move around fils with prety decent easy. Enough to get some work done. 

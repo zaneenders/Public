@@ -15,10 +15,10 @@ public struct Home: BaseThemePage, RootPage {
         Qoutes.self,
         TestPage.self,
         NeoVim.self,
+        Blog.self,
     ]
 
     @DivBuilder public var themedContent: String {
-        NavigationBar()
         button("google", to: .site("http://google.com"))
     }
 }

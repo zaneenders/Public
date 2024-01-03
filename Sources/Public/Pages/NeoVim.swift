@@ -18,7 +18,6 @@ public struct NeoVim: BaseThemePage {
     public init() {}
 
     @DivBuilder public var themedContent: String {
-        NavigationBar()
         """
         Well I have gone down the rabbit hole of \(newTabLink("NewVim", to: "https://neovim.io/")) and am currenlty writing this from it. 
         So far I have to say I enjoy it. There is a lot of compelxity I just took on but so far I am able to edit text and move around fils with prety decent easy. Enough to get some work done. 

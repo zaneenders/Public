@@ -20,7 +20,7 @@ struct Qoute: PageComponent {
         """
         <div \(CustomCSS.typeClass(.card))>
         <div>"\(text)"</div>
-        - \(person) \(link != nil ? link!.htmlView : "")
+        -\(person) \(link != nil ? link!.htmlView : "")
         </div>
         """
     }

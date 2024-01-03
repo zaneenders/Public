@@ -39,7 +39,10 @@ extension BaseThemePage {
         <!DOCTYPE html>
         <html lang="en">
         \(headHTML)
+        <body>
+        \(NavigationBar().contents)
         \(themedContent)
+        </body>
         </html>
         """
     }

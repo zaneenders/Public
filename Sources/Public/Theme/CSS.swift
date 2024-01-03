@@ -3,6 +3,7 @@ import WebsiteBuilder
 
 enum CustomCSS: CaseIterable {
     case card
+    case blogContent
     fileprivate static func style(_ c: CustomCSS) -> String {
         switch c {
         case .card:
@@ -17,6 +18,23 @@ enum CustomCSS: CaseIterable {
                 border-width: 1px;
                 margin: 1em;
                 padding: 1em;
+            }
+            """
+        case .blogContent:
+            """
+            .\(c) {
+                display: inline-block;
+                background-color: \(Colors.xTerm256(15));
+                box-shadow: inset 2px 2px 6px \(Colors.xTerm256(251)), inset -2px -2px 6px \(Colors.xTerm256(255)); 
+                border-radius: 10px;
+                border-color: \(Colors.xTerm256(15));
+                border-style: solid;
+                border-width: 1px;
+                margin: 1em;
+                padding: 0 1em;
+            }
+            .\(c) > p {
+                text-align: left;
             }
             """
         }

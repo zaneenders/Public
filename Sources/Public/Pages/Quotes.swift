@@ -12,7 +12,6 @@ let podcastLink = Podcast(links)
 struct Qoutes: BaseThemePage {
 
     @_Builder var themedContent: String {
-        NavigationBar()
         Qoute(
             "You have to be in a bin so pick the bin", "Andrew Bustamante",
             podcastLink, why)

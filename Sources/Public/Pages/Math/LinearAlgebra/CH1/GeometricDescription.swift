@@ -1,5 +1,5 @@
-struct GeometricDescription: MathWebPage {
-    var markupDescription: String {
+struct GeometricDescription: BaseThemePage {
+    var themedContent: String {
         ""
     }
 }

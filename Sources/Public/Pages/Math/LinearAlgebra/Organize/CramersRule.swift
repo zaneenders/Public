@@ -1,6 +1,6 @@
-struct CramersRule: MathWebPage {
+struct CramersRule: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Cramer's rule can be used to see how Ax = b is affected by changes in entries of b. This is usually done with computers like most of linear Algebra.
 
@@ -23,7 +23,7 @@ struct CramersRule: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Determinate.self
     ]
 }

@@ -1,8 +1,8 @@
-struct TrivialSolution: MathWebPage {
+struct TrivialSolution: BaseThemePage {
 
-    var related: [any MathWebPage.Type] = [InvertibleMatrixTheorem.self]
+    var related: [any BaseThemePage.Type] = [InvertibleMatrixTheorem.self]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         A solution is known as Trivial in math if it is obvious or easy to obtain.
         """

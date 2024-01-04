@@ -1,5 +1,5 @@
-struct SubSpace: MathWebPage {
-    var markupDescription: String {
+struct SubSpace: BaseThemePage {
+    var themedContent: String {
         """
         A subspace is a vector space that is entirely contained within another vector space
 
@@ -13,7 +13,7 @@ struct SubSpace: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Image.self,
         NullSpace.self,
         ColumnSpace.self,

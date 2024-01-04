@@ -1,7 +1,7 @@
-struct Transformation: MathWebPage {
-    var related: [any MathWebPage.Type] = []
+struct Transformation: BaseThemePage {
+    var related: [any BaseThemePage.Type] = []
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }

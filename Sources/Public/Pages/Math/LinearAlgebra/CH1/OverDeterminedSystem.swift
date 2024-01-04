@@ -1,5 +1,5 @@
-struct OverDeterminedSystem: MathWebPage {
-    var markupDescription: String {
+struct OverDeterminedSystem: BaseThemePage {
+    var themedContent: String {
         """
         When there are more equations then variables. 
 

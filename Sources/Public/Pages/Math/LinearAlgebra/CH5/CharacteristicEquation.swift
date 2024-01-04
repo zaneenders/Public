@@ -1,6 +1,6 @@
-struct CharacteristicEquation: MathWebPage {
+struct CharacteristicEquation: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Instead of plugging in explicit values for λ just find the polynomial for all values of λ.
 
@@ -19,7 +19,7 @@ struct CharacteristicEquation: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Similarity.self, Determinate.self, FactoringPolynomials.self,
         CompletingTheSquare.self, InvertibleMatrixTheorem.self,
         LinearDependence.self, EigenValue.self,

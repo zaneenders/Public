@@ -1,5 +1,5 @@
-struct LinearTransformation: MathWebPage {
-    var markupDescription: String {
+struct LinearTransformation: BaseThemePage {
+    var themedContent: String {
         """
         Linear Transformations preserve addition and scalar multiplication.
         Grid Lines remain parallel and evenly spaced.
@@ -58,7 +58,7 @@ struct LinearTransformation: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         BasisVectors.self,
         InvertibleMatrixTheorem.self,
         Determinate.self,

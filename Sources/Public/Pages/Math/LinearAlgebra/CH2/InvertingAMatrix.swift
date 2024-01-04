@@ -1,9 +1,9 @@
 import Tags
 import WebsiteBuilder
 
-struct InvertingAMatrix: MathWebPage {
+struct InvertingAMatrix: BaseThemePage {
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         """
         You can invert a 2x2 matrix by using the formula below
         """
@@ -16,5 +16,5 @@ struct InvertingAMatrix: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

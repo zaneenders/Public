@@ -1,9 +1,9 @@
-struct StandardBasis: MathWebPage {
-    var related: [any MathWebPage.Type] = [
+struct StandardBasis: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [
         CoordinateSystems.self, Basis.self, IdentityMatrix.self,
     ]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The identity matrix that spans Rn.
 

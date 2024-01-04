@@ -1,9 +1,9 @@
-struct Derivative: MathWebPage {
-    var markupDescription: String {
+struct Derivative: BaseThemePage {
+    var themedContent: String {
         """
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Linearity.self
     ]
 }

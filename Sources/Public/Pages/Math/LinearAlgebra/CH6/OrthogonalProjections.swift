@@ -1,12 +1,12 @@
 import WebsiteBuilder
 
-struct OrthogonalProjections: MathWebPage {
+struct OrthogonalProjections: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         body()
     }
 
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }
 
 let rn = latex(Real().latexDescription + superscript("n"))

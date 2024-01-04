@@ -1,11 +1,11 @@
 import WebsiteBuilder
 
-struct CrossProduct: MathWebPage {
+struct CrossProduct: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         ""
     }
 
-    var related: [MathWebPage.Type] = []
+    var related: [BaseThemePage.Type] = []
 
 }

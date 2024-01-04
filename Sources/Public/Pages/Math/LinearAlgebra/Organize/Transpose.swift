@@ -1,10 +1,10 @@
 import Tags
 import WebsiteBuilder
 
-struct Transpose: MathWebPage {
-    var related: [any MathWebPage.Type] = [OrthogonalMatrix.self]
+struct Transpose: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [OrthogonalMatrix.self]
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         """
         The transpose of a matrix is to flip the entires over the diagonal. The rows of A become the columns of A^T
 

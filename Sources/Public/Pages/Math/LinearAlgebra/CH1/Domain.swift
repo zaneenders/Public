@@ -1,9 +1,9 @@
-struct Domain: MathWebPage {
+struct Domain: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The input to a function or transformation
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

@@ -1,9 +1,9 @@
-struct TriangularMatrix: MathWebPage {
-    var related: [any MathWebPage.Type] = [
+struct TriangularMatrix: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [
         IdentityMatrix.self, Determinate.self,
     ]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         A Triangular Matrix is a Matrix where half the entries on at least one side of the Matrix is all zeros. 
 

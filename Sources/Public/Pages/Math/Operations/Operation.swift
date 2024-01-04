@@ -1,5 +1,5 @@
-struct Operation: MathWebPage {
-    var markupDescription: String {
+struct Operation: BaseThemePage {
+    var themedContent: String {
         """
         This is a special type of \(Function.link) that takes in zero or more things. and returns a well defined output.
 

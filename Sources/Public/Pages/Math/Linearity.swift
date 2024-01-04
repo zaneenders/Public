@@ -1,9 +1,9 @@
-struct Linearity: MathWebPage {
-    var related: [any MathWebPage.Type] = [
+struct Linearity: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [
         VectorSpace.self, LinearTransformation.self, Derivative.self,
     ]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Formal Definition:
         Additivity: L(v + w) = L(v) + L(w)

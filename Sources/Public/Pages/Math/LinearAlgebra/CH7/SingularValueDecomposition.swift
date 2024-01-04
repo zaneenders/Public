@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct SingularValueDecomposition: MathWebPage {
-    @ParagraphBuilder var markupDescription: String {
+struct SingularValueDecomposition: BaseThemePage {
+    @ParagraphBuilder var themedContent: String {
         "A = U\(Sigma)V^T"
         """
         U = m x m \(OrthogonalMatrix.link)

@@ -1,6 +1,6 @@
-struct VectorSpace: MathWebPage {
+struct VectorSpace: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Given a set of vectors a vector space describes the space which they cover from scalar multiplication and vector addition.
 
@@ -61,7 +61,7 @@ struct VectorSpace: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
 
         Dimension.self,
         Vector.self,

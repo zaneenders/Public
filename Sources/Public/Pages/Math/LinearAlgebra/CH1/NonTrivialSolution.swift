@@ -1,9 +1,9 @@
-struct NonTrivialSolution: MathWebPage {
+struct NonTrivialSolution: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }
 
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

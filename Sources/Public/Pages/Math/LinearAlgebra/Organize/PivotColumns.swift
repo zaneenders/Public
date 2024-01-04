@@ -1,7 +1,7 @@
-struct PivotColumns: MathWebPage {
-    var markupDescription: String {
+struct PivotColumns: BaseThemePage {
+    var themedContent: String {
         """
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

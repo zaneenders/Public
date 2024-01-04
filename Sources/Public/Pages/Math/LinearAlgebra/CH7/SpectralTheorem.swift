@@ -1,8 +1,8 @@
 import WebsiteBuilder
 
-struct SpectralTheorem: MathWebPage {
+struct SpectralTheorem: BaseThemePage {
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         "An n x n symmetic matrix A has the following properties"
         unorderedList {
             "A has n real \(EigenValue.link)s, counting \(Multiplicity.link)"

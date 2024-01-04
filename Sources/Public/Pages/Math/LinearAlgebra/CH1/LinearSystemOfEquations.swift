@@ -1,5 +1,5 @@
-struct LinearSystemOfEquations: MathWebPage {
-    var markupDescription: String {
+struct LinearSystemOfEquations: BaseThemePage {
+    var themedContent: String {
         """
         A system of linear equations has one of the following
         No solution

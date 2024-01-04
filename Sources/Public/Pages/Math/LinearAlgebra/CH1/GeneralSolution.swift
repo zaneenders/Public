@@ -1,5 +1,5 @@
-struct GeneralSolution: MathWebPage {
-    var markupDescription: String {
+struct GeneralSolution: BaseThemePage {
+    var themedContent: String {
         """
         The general solution is a set of vectors that all solutions are some scalar multiple or linear combination of.
 
@@ -21,7 +21,7 @@ struct GeneralSolution: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         ParametricVectorForm.self,
         FreeVariables.self,
         BasicVariables.self,

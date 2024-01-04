@@ -1,7 +1,7 @@
-struct Associative: MathWebPage {
-    var related: [any MathWebPage.Type] = [VectorSpace.self]
+struct Associative: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [VectorSpace.self]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }

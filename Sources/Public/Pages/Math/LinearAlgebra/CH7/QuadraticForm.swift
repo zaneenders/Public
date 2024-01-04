@@ -1,9 +1,9 @@
 import Tags
 import WebsiteBuilder
 
-struct QuadraticForm: LinearAlgebraPage {
+struct QuadraticForm: BaseThemePage {
 
-    @ParagraphBuilder var linearAlgebraContent: String {
+    @ParagraphBuilder var themedContent: String {
         h3("\(ChangeOfVariables.link) in a Quadratic Form")
         // Maybe talk more about what we are doing here
         "To do this we will need a Change of coordinates matrix to remove the cross product terms"
@@ -32,7 +32,7 @@ struct QuadraticForm: LinearAlgebraPage {
             "Latex exmaple for writing a matrix in Quadraic form and vis versa")
     }
 
-    var related: [MathWebPage.Type] = [
+    var related: [BaseThemePage.Type] = [
         Scalar.self,
         Diagonalization.self,
         Dimension.self,

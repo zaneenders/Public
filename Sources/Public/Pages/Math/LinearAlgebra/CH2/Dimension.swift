@@ -1,6 +1,6 @@
-struct Dimension: MathWebPage {
+struct Dimension: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The number of vectors that forms a basis for the given subspace.
 
@@ -29,7 +29,7 @@ struct Dimension: MathWebPage {
         Infinite Dimensional
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         EigenSpace.self,
         VectorSpace.self,
         Rank.self,

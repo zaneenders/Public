@@ -1,5 +1,5 @@
-struct Orthogonal: LinearAlgebraPage {
-    var linearAlgebraContent: String {
+struct Orthogonal: BaseThemePage {
+    var themedContent: String {
         """
         Two vectors are Orthogonal (Perpendicular) if there \(InnerProduct.link) (dot product) equals 0.
         """
@@ -8,7 +8,7 @@ struct Orthogonal: LinearAlgebraPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         InnerProduct.self,
         SubSpace.self,
         GramSchmidtProcess.self,

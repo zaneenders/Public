@@ -1,6 +1,6 @@
-struct LinearIndependence: MathWebPage {
+struct LinearIndependence: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
 
         In short non of the vectors in the set can be scaled or combined with other vectors to produce a given vector. They are all unique given any linear combination of any of the other vectors
@@ -15,7 +15,7 @@ struct LinearIndependence: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         LinearDependence.self,
         InvertibleMatrixTheorem.self,
     ]

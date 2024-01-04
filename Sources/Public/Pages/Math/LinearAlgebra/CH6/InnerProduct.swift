@@ -1,7 +1,7 @@
 typealias DotProduct = InnerProduct
 
-struct InnerProduct: LinearAlgebraPage {
-    var linearAlgebraContent: String {
+struct InnerProduct: BaseThemePage {
+    var themedContent: String {
         """
         Also known as the dot product.
         """
@@ -10,6 +10,4 @@ struct InnerProduct: LinearAlgebraPage {
         Then adding up all those products.
         """
     }
-
-    var related: [any MathWebPage.Type] = []
 }

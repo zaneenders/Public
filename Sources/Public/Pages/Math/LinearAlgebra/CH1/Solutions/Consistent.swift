@@ -1,5 +1,5 @@
-struct Consistent: MathWebPage {
-    var markupDescription: String {
+struct Consistent: BaseThemePage {
+    var themedContent: String {
         """
         Where there is one or many solutions
 

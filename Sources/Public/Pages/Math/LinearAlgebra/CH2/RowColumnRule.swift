@@ -1,8 +1,8 @@
-struct RowColumnRule: MathWebPage {
+struct RowColumnRule: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

@@ -1,6 +1,6 @@
-struct ColumnSpace: MathWebPage {
+struct ColumnSpace: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The column space of a matrix A is a the set of col A
 
@@ -24,7 +24,7 @@ struct ColumnSpace: MathWebPage {
         The columns of a Matrix A form a basis for Col A
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         SubSpace.self,
         SubspacesOfRn.self,
         Basis.self,

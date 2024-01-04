@@ -1,9 +1,7 @@
 import Tags
 
-struct ChangeOfVariables: LinearAlgebraPage {
-    var linearAlgebraContent: String {
+struct ChangeOfVariables: BaseThemePage {
+    var themedContent: String {
         TODO("What is this?")
     }
-
-    var related: [MathWebPage.Type] = []
 }

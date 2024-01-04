@@ -1,5 +1,5 @@
-struct ParametricVectorForm: MathWebPage {
-    var markupDescription: String {
+struct ParametricVectorForm: BaseThemePage {
+    var themedContent: String {
         """
         A set of vectors whose linear combination produces x a vector who produces a b in the span of Ax.
 
@@ -20,7 +20,7 @@ struct ParametricVectorForm: MathWebPage {
         TODO Latex Example of this
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         GeneralSolution.self,
         NullSpace.self,
     ]

@@ -1,6 +1,6 @@
-struct MatrixMultiplication: MathWebPage {
+struct MatrixMultiplication: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         TODO add properties of matrix Multiplication, Page 127
 
@@ -14,7 +14,7 @@ struct MatrixMultiplication: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         RowColumnRule.self
     ]
 }

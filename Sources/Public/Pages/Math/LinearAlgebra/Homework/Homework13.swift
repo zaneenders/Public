@@ -2,9 +2,9 @@ import Tags
 import WebsiteBuilder
 
 extension LinearAlgebra {
-    struct Homework13: MathWebPage {
+    struct Homework13: BaseThemePage {
 
-        @ParagraphBuilder var markupDescription: String {
+        @ParagraphBuilder var themedContent: String {
             h3("28")
             Question("Is this right?")
             """
@@ -52,7 +52,7 @@ extension LinearAlgebra {
 
         }
 
-        var related: [MathWebPage.Type] = []
+        var related: [BaseThemePage.Type] = []
 
         static var pInverse: String {
             OrthogonalMatrix.pInverse

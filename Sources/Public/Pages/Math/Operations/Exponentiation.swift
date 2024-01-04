@@ -1,7 +1,7 @@
 import Tags
 
-struct Exponentiation: MathWebPage {
-    var markupDescription: String {
+struct Exponentiation: BaseThemePage {
+    var themedContent: String {
         TODO("Fill this out")
     }
 }

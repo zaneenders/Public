@@ -1,7 +1,7 @@
 import Tags
 
-struct Division: MathWebPage {
-    var markupDescription: String {
+struct Division: BaseThemePage {
+    var themedContent: String {
         TODO("Fill this out")
     }
 }

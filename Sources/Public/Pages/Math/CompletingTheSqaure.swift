@@ -1,7 +1,7 @@
-struct CompletingTheSquare: MathWebPage {
-    var related: [any MathWebPage.Type] = [CharacteristicEquation.self]
+struct CompletingTheSquare: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [CharacteristicEquation.self]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         TODO Latex and fill out the steps
         """

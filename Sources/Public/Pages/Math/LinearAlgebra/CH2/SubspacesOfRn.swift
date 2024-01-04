@@ -1,6 +1,6 @@
-struct SubspacesOfRn: MathWebPage {
+struct SubspacesOfRn: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Definition:
 
@@ -21,7 +21,7 @@ struct SubspacesOfRn: MathWebPage {
         It can be shown that if a subspace H has a basis of p vectors, then every basis of H must consist of exactly p vectors.
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         ColumnSpace.self,
         NullSpace.self,
         RowSpace.self,

@@ -1,5 +1,5 @@
-struct LinearEquation: MathWebPage {
-    var markupDescription: String {
+struct LinearEquation: BaseThemePage {
+    var themedContent: String {
         ""
     }
 }

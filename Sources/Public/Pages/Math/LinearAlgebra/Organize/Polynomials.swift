@@ -1,6 +1,6 @@
-struct Polynomials: MathWebPage {
+struct Polynomials: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         TODO Latex P
 
@@ -9,7 +9,7 @@ struct Polynomials: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         LinearDependence.self,
         LinearIndependence.self,
         Linearity.self,

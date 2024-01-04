@@ -1,5 +1,5 @@
-struct UniqueSolution: MathWebPage {
-    var markupDescription: String {
+struct UniqueSolution: BaseThemePage {
+    var themedContent: String {
         """
         Where there is only one answer 
         """

@@ -1,7 +1,7 @@
-struct OrthogonalComplement: MathWebPage {
-    var markupDescription: String {
+struct OrthogonalComplement: BaseThemePage {
+    var themedContent: String {
         """
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

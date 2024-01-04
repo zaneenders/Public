@@ -1,6 +1,6 @@
-struct CofactorExpansion: MathWebPage {
+struct CofactorExpansion: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Also known as the Laplace expansion.
 
@@ -14,7 +14,7 @@ struct CofactorExpansion: MathWebPage {
         This really only factors out the checkerboard pattern into an actually math expression.
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Determinate.self,
         Adjugate.self,
     ]

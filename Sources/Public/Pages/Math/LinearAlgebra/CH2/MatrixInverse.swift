@@ -1,6 +1,6 @@
-struct MatrixInverse: MathWebPage {
+struct MatrixInverse: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The idea of inverting a matrix is similar to normal numbers where 6^-1(6) = 1. Reminder 6^-1 = 1/6
 
@@ -49,5 +49,5 @@ struct MatrixInverse: MathWebPage {
         - we can solve for x by inverting A and multiplying b
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

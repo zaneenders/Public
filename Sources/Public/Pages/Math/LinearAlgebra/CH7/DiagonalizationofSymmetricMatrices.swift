@@ -1,9 +1,9 @@
 import Tags
 import WebsiteBuilder
 
-struct DiagonalizationofSymmetricMatrices: LinearAlgebraPage {
+struct DiagonalizationofSymmetricMatrices: BaseThemePage {
 
-    var linearAlgebraContent: String {
+    var themedContent: String {
         paragraphs {
             """
             A symmetric matrix is a matrix A such that \(Self.aTa)
@@ -21,7 +21,7 @@ struct DiagonalizationofSymmetricMatrices: LinearAlgebraPage {
         }
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         EigenSpace.self, EigenVector.self, Diagonalization.self,
         Orthogonal.self,
     ]

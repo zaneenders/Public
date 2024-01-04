@@ -1,6 +1,6 @@
-struct MatrixAddition: MathWebPage {
+struct MatrixAddition: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Matrix addition is pretty much the same as vector addition and can be thought of as a loop with pointers in both elements and adding those elements together in the resulting matrix.
 
@@ -9,5 +9,5 @@ struct MatrixAddition: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

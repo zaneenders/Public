@@ -1,6 +1,6 @@
-struct Span: MathWebPage {
+struct Span: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Span is the reach or scope of the vectors of a given set. If they can reach all areas of a subspace they forma basis for that subspace.
 
@@ -16,7 +16,7 @@ struct Span: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Basis.self, SubSpace.self, LinearCombination.self,
         InvertibleMatrixTheorem.self,
     ]

@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct ConditionNumber: MathWebPage {
-    @ParagraphBuilder var markupDescription: String {
+struct ConditionNumber: BaseThemePage {
+    @ParagraphBuilder var themedContent: String {
         "Condition Number"
     }
 }

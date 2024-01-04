@@ -1,5 +1,5 @@
-struct Inconsistent: MathWebPage {
-    var markupDescription: String {
+struct Inconsistent: BaseThemePage {
+    var themedContent: String {
         """
         Where there is no Solution
         """

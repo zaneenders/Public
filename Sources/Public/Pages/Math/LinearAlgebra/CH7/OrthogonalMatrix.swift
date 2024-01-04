@@ -1,8 +1,8 @@
 import WebsiteBuilder
 
-struct OrthogonalMatrix: MathWebPage {
+struct OrthogonalMatrix: BaseThemePage {
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         """
         An Orthogonal Matrix is a matrix in which it's transpose is also its inverse.
         """
@@ -15,7 +15,7 @@ struct OrthogonalMatrix: MathWebPage {
         "A square matrix may be made an Orthogonal matrix by using the \(GramSchmidtProcess.link)."
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Transpose.self,
         OrthonormalSet.self,
     ]

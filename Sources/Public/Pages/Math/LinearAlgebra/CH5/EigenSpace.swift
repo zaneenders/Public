@@ -1,6 +1,6 @@
-struct EigenSpace: MathWebPage {
+struct EigenSpace: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The \(NullSpace.link) of the equation 
         (A - λI)x = 0
@@ -17,7 +17,7 @@ struct EigenSpace: MathWebPage {
         Because and eigen space is just the \(NullSpace.link). To find the eigen vectors simply find the basis for the \(NullSpace.link), by finding the general solution.
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         GeneralSolution.self,
         NullSpace.self,
         EigenValue.self,

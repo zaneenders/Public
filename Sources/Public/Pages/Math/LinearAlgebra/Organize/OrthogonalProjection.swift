@@ -1,7 +1,7 @@
-struct OrthogonalProjection: MathWebPage {
-    var markupDescription: String {
+struct OrthogonalProjection: BaseThemePage {
+    var themedContent: String {
         """
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

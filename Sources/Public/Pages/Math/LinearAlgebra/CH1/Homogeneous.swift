@@ -1,5 +1,5 @@
-struct Homogeneous: MathWebPage {
-    var markupDescription: String {
+struct Homogeneous: BaseThemePage {
+    var themedContent: String {
         """
         A system of linear equations is said to be homogeneous if it can be
          written in the form Ax = 0
@@ -26,5 +26,5 @@ struct Homogeneous: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [NullSpace.self]
+    var related: [any BaseThemePage.Type] = [NullSpace.self]
 }

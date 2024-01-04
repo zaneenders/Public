@@ -1,7 +1,7 @@
-struct Axiom: MathWebPage {
-    var related: [any MathWebPage.Type] = [VectorSpace.self]
+struct Axiom: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [VectorSpace.self]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         You can think of these as protocols or an interface to an Idea
 

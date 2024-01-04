@@ -1,9 +1,9 @@
 import WebsiteBuilder
 
 extension LinearAlgebra {
-    struct Homework: MathWebPage {
+    struct Homework: BaseThemePage {
 
-        var markupDescription: String {
+        var themedContent: String {
             makeLinks(subPages).joined(separator: "\n")
         }
 
@@ -11,6 +11,6 @@ extension LinearAlgebra {
             Homework13.self
         ]
 
-        var related: [MathWebPage.Type] = []
+        var related: [BaseThemePage.Type] = []
     }
 }

@@ -1,7 +1,7 @@
-struct FactoringPolynomials: MathWebPage {
-    var related: [any MathWebPage.Type] = [CharacteristicEquation.self]
+struct FactoringPolynomials: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [CharacteristicEquation.self]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         TODO Latex and fill out the steps
         """

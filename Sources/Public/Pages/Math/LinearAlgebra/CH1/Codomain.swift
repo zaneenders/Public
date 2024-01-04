@@ -1,9 +1,9 @@
-struct Codomain: MathWebPage {
+struct Codomain: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         The set of all possible outputs for which an image may be defined
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

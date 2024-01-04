@@ -1,7 +1,7 @@
 typealias Diagonalizable = Diagonalization
-struct Diagonalization: MathWebPage {
+struct Diagonalization: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         A \(DiagonalMatrix.link) is an n x n matrix that has values 0 except along the diagonal of of the matrix.
         TODO Latex Example
@@ -45,7 +45,7 @@ struct Diagonalization: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Basis.self,
         EigenValue.self,
         EigenVector.self,

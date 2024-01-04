@@ -1,5 +1,5 @@
-struct LinearDependence: MathWebPage {
-    var markupDescription: String {
+struct LinearDependence: BaseThemePage {
+    var themedContent: String {
         """
 
         has only the trivial solution the set {v1 .... v_p} is said to be linearly dependent if there exist weights c1 .... cp not all zero such that 
@@ -30,5 +30,5 @@ struct LinearDependence: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [LinearIndependence.self]
+    var related: [any BaseThemePage.Type] = [LinearIndependence.self]
 }

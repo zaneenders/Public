@@ -1,9 +1,9 @@
 import Tags
 import WebsiteBuilder
 
-struct SymmetricMatrix: MathWebPage {
+struct SymmetricMatrix: BaseThemePage {
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         "A \(SymmetricMatrix.link) is a matrix which the \(Transpose.link) of its self is the same matrix."
 
         TODO("Latex Example")
@@ -15,7 +15,7 @@ struct SymmetricMatrix: MathWebPage {
         latex("A^T = (PDP^T)^T = P^{TT}D^TP^T = PDP^T = A")
     }
 
-    var related: [MathWebPage.Type] = [
+    var related: [BaseThemePage.Type] = [
         Transpose.self,
         EigenSpace.self,
         EigenVector.self,

@@ -1,6 +1,6 @@
-struct Rank: MathWebPage {
+struct Rank: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         ??? I don't fully understand this yet.
 
@@ -18,7 +18,7 @@ struct Rank: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Dimension.self,
         CoordinateSystems.self,
         ColumnSpace.self,

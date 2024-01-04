@@ -1,8 +1,8 @@
 import Tags
 import WebsiteBuilder
 
-struct OrthogonalDiagonalization: MathWebPage {
-    @ParagraphBuilder var markupDescription: String {
+struct OrthogonalDiagonalization: BaseThemePage {
+    @ParagraphBuilder var themedContent: String {
         h3(
             """
             Steps to Orthogonally diagonalize an \(OrthogonalMatrix.link):
@@ -36,7 +36,7 @@ struct OrthogonalDiagonalization: MathWebPage {
         "An n x n matrix A is orthogonally diagonalizeable if and only if A is a \(SymmetricMatrix.link)."
     }
 
-    var related: [MathWebPage.Type] = [
+    var related: [BaseThemePage.Type] = [
         EigenValue.self,
         EigenVector.self,
         IdentityMatrix.self,

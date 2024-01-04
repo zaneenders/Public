@@ -1,15 +1,15 @@
-struct ZeroVector: MathWebPage {
+struct ZeroVector: BaseThemePage {
     static var name: String {
         "Zero Vector"
     }
-    var markupDescription: String {
+    var themedContent: String {
         """
         The vector that contains only zeros.
 
         TODO Latex
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         NullSpace.self
     ]
 }

@@ -1,8 +1,8 @@
 import WebsiteBuilder
 
-struct Spaces: MathWebPage {
+struct Spaces: BaseThemePage {
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         h1("Math related things here")
         aTag("Home", to: "/") + h2("vector Space")
         pTag(VectorSpace().contents)
@@ -12,5 +12,5 @@ struct Spaces: MathWebPage {
         pTag(SubSpace().contents)
     }
 
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

@@ -1,6 +1,6 @@
-struct LUFactorization: MathWebPage {
+struct LUFactorization: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         this Factors the matrix into two halfs L and U
 
@@ -49,5 +49,5 @@ struct LUFactorization: MathWebPage {
             - if you multiply a row by 2 before adding to 0 out a position you will place a -2 in the L matrix at that position.
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

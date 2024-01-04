@@ -1,7 +1,7 @@
-struct Scalar: MathWebPage {
-    var related: [any MathWebPage.Type] = [VectorSpace.self]
+struct Scalar: BaseThemePage {
+    var related: [any BaseThemePage.Type] = [VectorSpace.self]
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Two vectors are only consider equal if there corresponding entires are equal. IE Order matters 
 

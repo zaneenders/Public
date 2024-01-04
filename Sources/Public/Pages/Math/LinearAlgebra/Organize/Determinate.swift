@@ -1,6 +1,6 @@
-struct Determinate: MathWebPage {
+struct Determinate: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         TODO update latex
 
@@ -67,7 +67,7 @@ struct Determinate: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         RowOperations.self, CharacteristicEquation.self,
         InvertibleMatrixTheorem.self, CofactorExpansion.self,
         TriangularMatrix.self, CramersRule.self, LinearTransformation.self,

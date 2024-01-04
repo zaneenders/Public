@@ -1,6 +1,6 @@
-struct Image: MathWebPage {
+struct Image: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }

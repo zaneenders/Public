@@ -12,23 +12,18 @@ let package = Package(
             targets: ["Public", "Tags"])
     ],
     dependencies: [
-        .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder"),
-        .package(name: "ScribeSystem", path: "../ScribeSystem"),
+        .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder")
         /*
         .package(
             url: "https://github.com/zaneenders/_WebsiteBuilder.git",
             from: "0.1.1"),
-        .package(
-            url: "git@github.com:zaneenders/ScribeSystem.git",
-            from: "0.0.2")
-        */
+       */
     ],
     targets: [
         .target(
             name: "Public",
             dependencies: [
-                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder"),
-                .product(name: "ScribeSystem", package: "ScribeSystem"),
+                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder")
             ]),
         // Move this to _WebsiteBuilder?
         .target(

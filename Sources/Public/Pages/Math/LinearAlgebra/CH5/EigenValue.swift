@@ -1,6 +1,6 @@
-struct EigenValue: MathWebPage {
+struct EigenValue: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Checking if a Value is an Eigen Value of a Matrix
         - Multiply the Eigen value the identity matrix and subtract that new matrix from A. 
@@ -26,7 +26,7 @@ struct EigenValue: MathWebPage {
         False There must be a non trivial solution.
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         CharacteristicEquation.self,
         EigenSpace.self,
         EigenVector.self,

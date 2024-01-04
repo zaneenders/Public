@@ -1,5 +1,5 @@
-struct NonHomogeneous: MathWebPage {
-    var markupDescription: String {
+struct NonHomogeneous: BaseThemePage {
+    var themedContent: String {
         """
         Matrix equations of the form Ax = b where b is not the zero vector.
 
@@ -16,5 +16,5 @@ struct NonHomogeneous: MathWebPage {
         Ax = b must have one nonzero solution p.
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

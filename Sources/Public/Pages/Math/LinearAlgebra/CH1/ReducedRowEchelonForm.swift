@@ -1,9 +1,9 @@
-struct ReducedRowEchelonForm: MathWebPage {
-    var markupDescription: String {
+struct ReducedRowEchelonForm: BaseThemePage {
+    var themedContent: String {
         """
 
         """
     }
 
-    var related: [any MathWebPage.Type] = [CoordinateSystems.self]
+    var related: [any BaseThemePage.Type] = [CoordinateSystems.self]
 }

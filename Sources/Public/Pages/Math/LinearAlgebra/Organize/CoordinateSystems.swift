@@ -1,6 +1,6 @@
-struct CoordinateSystems: MathWebPage {
+struct CoordinateSystems: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Definition:
         Let B = {b1 ... bp} is a basis for a sub space H. For each x in H, the coordinates of x relative to the basis B are the weights c1, ... cp such that x = c1 b1 + .... + cp bp and the vector in Rp
@@ -49,7 +49,7 @@ struct CoordinateSystems: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         StandardBasis.self,
         Basis.self,
         SubspacesOfRn.self,

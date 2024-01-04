@@ -1,6 +1,6 @@
-struct InvertibleMatrixTheorem: MathWebPage {
+struct InvertibleMatrixTheorem: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         If one of the following is true then all are true.
         All matrices will be either singular (non invertible) or non-singular (invertible)
@@ -49,7 +49,7 @@ struct InvertibleMatrixTheorem: MathWebPage {
             - The matrix A has n nonzero singular values
             """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Basis.self,
         ColumnSpace.self,
         Rank.self,

@@ -1,6 +1,6 @@
-struct ElementaryMatrices: MathWebPage {
+struct ElementaryMatrices: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         An elementary matrix is one that is obtained by performing a single elementary row operation on an identity matrix.
 
@@ -22,7 +22,7 @@ struct ElementaryMatrices: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
 
         ]
 }

@@ -1,6 +1,6 @@
-struct ChangeOfBasis: MathWebPage {
+struct ChangeOfBasis: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         TODO Latex page 275
         Theorem 15
@@ -14,7 +14,7 @@ struct ChangeOfBasis: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Basis.self,
         VectorSpace.self,
     ]

@@ -1,9 +1,9 @@
-struct BasisVectors: MathWebPage {
-    var markupDescription: String {
+struct BasisVectors: BaseThemePage {
+    var themedContent: String {
         """
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         VectorSpace.self,
         LinearTransformation.self,
     ]

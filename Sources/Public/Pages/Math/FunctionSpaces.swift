@@ -1,6 +1,6 @@
-struct FunctionSpace: MathWebPage {
+struct FunctionSpace: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Function Space
 
@@ -17,7 +17,7 @@ struct FunctionSpace: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Polynomials.self, Derivative.self, LinearTransformation.self,
     ]
 

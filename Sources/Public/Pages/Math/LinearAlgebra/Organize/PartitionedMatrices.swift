@@ -1,6 +1,6 @@
-struct PartitionedMatrices: MathWebPage {
+struct PartitionedMatrices: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Partitioned or block matrix
 
@@ -15,5 +15,5 @@ struct PartitionedMatrices: MathWebPage {
         - this matrix is invertible as long as all the diagonal blocks are invertible
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

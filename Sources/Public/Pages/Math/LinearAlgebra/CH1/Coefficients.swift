@@ -1,5 +1,5 @@
-struct Coefficients: MathWebPage {
-    var markupDescription: String {
+struct Coefficients: BaseThemePage {
+    var themedContent: String {
         ""
     }
 }

@@ -1,9 +1,9 @@
 import Tags
 import WebsiteBuilder
 
-struct RowOperations: MathWebPage {
+struct RowOperations: BaseThemePage {
 
-    @ParagraphBuilder var markupDescription: String {
+    @ParagraphBuilder var themedContent: String {
         """
         Partitioned or block matrix
 
@@ -29,7 +29,7 @@ struct RowOperations: MathWebPage {
         }
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Determinate.self, RowEchelonForm.self, ReducedRowEchelonForm.self,
     ]
 }

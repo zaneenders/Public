@@ -1,5 +1,5 @@
-struct MatrixTransformation: MathWebPage {
-    var markupDescription: String {
+struct MatrixTransformation: BaseThemePage {
+    var themedContent: String {
         """
         A transformation of changing a vector x by multiplying it by A. 
 
@@ -14,5 +14,5 @@ struct MatrixTransformation: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

@@ -1,6 +1,6 @@
-struct Basis: MathWebPage {
+struct Basis: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         ??? Can a basis be smaller the Rn? - NO?
         ??? Are there infinite amount of basis?
@@ -31,7 +31,7 @@ struct Basis: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
 
         RowSpace.self,
         ColumnSpace.self,

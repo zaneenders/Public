@@ -1,7 +1,7 @@
-struct IfAndOnlyIf: MathWebPage {
-    var related: [any MathWebPage.Type] = []
+struct IfAndOnlyIf: BaseThemePage {
+    var related: [any BaseThemePage.Type] = []
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }

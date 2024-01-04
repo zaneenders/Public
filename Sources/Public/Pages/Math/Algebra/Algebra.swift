@@ -1,8 +1,8 @@
 import Tags
 import WebsiteBuilder
 
-struct Algebra: MathWebPage {
-    @ParagraphBuilder var markupDescription: String {
+struct Algebra: BaseThemePage {
+    @ParagraphBuilder var themedContent: String {
         TODO("Review \(Factoring.link) polynomials degree 2 and 3")
     }
 

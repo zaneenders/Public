@@ -1,7 +1,7 @@
 import Tags
 
-struct Logarithm: MathWebPage {
-    var markupDescription: String {
+struct Logarithm: BaseThemePage {
+    var themedContent: String {
         TODO("Fill this out")
     }
 }

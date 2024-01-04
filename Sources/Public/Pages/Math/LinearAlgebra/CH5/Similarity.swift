@@ -1,6 +1,6 @@
-struct Similarity: MathWebPage {
+struct Similarity: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         If an n x n matrices A and B are similar then they have the same \(CharacteristicEquation.link) and hence the same eigen values (with the same multiplicities)
 
@@ -9,7 +9,7 @@ struct Similarity: MathWebPage {
         A = PB(P^-1)
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         CharacteristicEquation.self
     ]
 }

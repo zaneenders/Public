@@ -1,6 +1,6 @@
-struct Adjugate: MathWebPage {
+struct Adjugate: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Adjugate or Classical adjoint
 
@@ -8,7 +8,7 @@ struct Adjugate: MathWebPage {
         """
     }
 
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         CramersRule.self, CofactorExpansion.self,
     ]
 

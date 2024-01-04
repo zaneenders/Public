@@ -1,7 +1,7 @@
-struct Proofs: MathWebPage {
-    var related: [any MathWebPage.Type] = []
+struct Proofs: BaseThemePage {
+    var related: [any BaseThemePage.Type] = []
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         Note:
         if and only if statements can be linked to gether in a chain.

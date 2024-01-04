@@ -1,5 +1,5 @@
-struct UnderDeterminedSystem: MathWebPage {
-    var markupDescription: String {
+struct UnderDeterminedSystem: BaseThemePage {
+    var themedContent: String {
         ""
     }
 }

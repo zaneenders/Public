@@ -1,5 +1,5 @@
-struct VectorEquation: MathWebPage {
-    var markupDescription: String {
+struct VectorEquation: BaseThemePage {
+    var themedContent: String {
         """
         TODO add latex for vector equation
         TODO add this as a function so that I can call it to create latex

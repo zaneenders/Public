@@ -1,8 +1,8 @@
-struct SpectralDecomposition: MathWebPage {
+struct SpectralDecomposition: BaseThemePage {
 
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         """
     }

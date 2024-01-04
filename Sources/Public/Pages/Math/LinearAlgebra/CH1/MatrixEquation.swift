@@ -1,5 +1,5 @@
-struct MatrixEquation: MathWebPage {
-    var markupDescription: String {
+struct MatrixEquation: BaseThemePage {
+    var themedContent: String {
         """
         The equation Ax = b has a solution if and only if b is a linear combination of the columns of A.
 

@@ -1,10 +1,10 @@
-struct NormalEquation: MathWebPage {
+struct NormalEquation: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         A^T(Ax) = A^T(b)
         """
     }
 
-    var related: [any MathWebPage.Type] = []
+    var related: [any BaseThemePage.Type] = []
 }

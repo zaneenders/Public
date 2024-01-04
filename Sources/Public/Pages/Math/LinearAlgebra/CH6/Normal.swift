@@ -1,8 +1,8 @@
 import Tags
 import WebsiteBuilder
 
-struct Normal: MathWebPage {
-    @ParagraphBuilder var markupDescription: String {
+struct Normal: BaseThemePage {
+    @ParagraphBuilder var themedContent: String {
         """
         A vector for which its "Length" is equal to 1.
         """

@@ -1,5 +1,5 @@
-struct NullSpace: MathWebPage {
-    var markupDescription: String {
+struct NullSpace: BaseThemePage {
+    var themedContent: String {
         """
         The solution set of all x that satisfy Ax = 0 the null space of A.
 
@@ -21,7 +21,7 @@ struct NullSpace: MathWebPage {
         Kernel of a transformation
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         EigenSpace.self,
         Kernel.self,
         Span.self,

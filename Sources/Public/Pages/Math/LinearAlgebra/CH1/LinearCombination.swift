@@ -1,6 +1,6 @@
-struct LinearCombination: MathWebPage {
+struct LinearCombination: BaseThemePage {
 
-    var markupDescription: String {
+    var themedContent: String {
         """
         any sum of scalar multiples of vectors
 
@@ -14,7 +14,7 @@ struct LinearCombination: MathWebPage {
 
         """
     }
-    var related: [any MathWebPage.Type] = [
+    var related: [any BaseThemePage.Type] = [
         Span.self
     ]
 }

@@ -1,11 +1,11 @@
 import WebsiteBuilder
 
-struct ProgrammingLanguages: PLPage {
-    var plContent: String {
+struct ProgrammingLanguages: BaseThemePage {
+    var themedContent: String {
         makeLinks(subPages).joined(separator: "\n")
     }
 
-    var subPages: [WebPage.Type] = [
+    var pages: [BaseThemePage.Type] = [
         TypeInference.self,
         ParametricPolymorphism.self,
     ]

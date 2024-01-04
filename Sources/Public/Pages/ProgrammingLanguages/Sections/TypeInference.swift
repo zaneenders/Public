@@ -1,8 +1,8 @@
 import Tags
 import WebsiteBuilder
 
-struct TypeInference: PLPage {
-    var plContent: String {
+struct TypeInference: BaseThemePage {
+    var themedContent: String {
 
         h3("Type Inference")
         """

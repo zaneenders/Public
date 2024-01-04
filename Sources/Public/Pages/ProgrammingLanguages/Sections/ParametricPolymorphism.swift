@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct ParametricPolymorphism: PLPage {
-    var plContent: String {
+struct ParametricPolymorphism: BaseThemePage {
+    var themedContent: String {
         h3("\(Self.self)")
         "Identify function, A function that just returns its input"
         """

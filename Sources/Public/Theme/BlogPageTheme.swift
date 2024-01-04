@@ -1,6 +1,6 @@
 import WebsiteBuilder
 
-protocol BlogPageTheme: BaseThemePage {
+public protocol BlogPageTheme: BaseThemePage {
     @_Builder var blogContent: String { get }
 }
 

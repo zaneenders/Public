@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "Public",
-            targets: ["Public"])
+            targets: ["Public", "Tags"])
     ],
     dependencies: [
         .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder"),
@@ -30,7 +30,12 @@ let package = Package(
                 .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder"),
                 .product(name: "ScribeSystem", package: "ScribeSystem"),
             ]),
-        .target(name: "Tags"),
+        // Move this to _WebsiteBuilder?
+        .target(
+            name: "Tags",
+            dependencies: [
+                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder")
+            ]),
         //.target(name: "ZaneEnders")
     ]
 )

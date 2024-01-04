@@ -6,8 +6,7 @@ struct Blog: BaseThemePage {
     }
 
     var pages: [BaseThemePage.Type] = [
-        MyNewWebsite.self,
-        NeoVim.self,
+        MyNewWebsite.self
     ]
 
     func posts() -> String {

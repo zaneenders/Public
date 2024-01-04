@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
 public protocol BaseThemePage: WebPage {
-    var themedContent: String { get }
+    @_Builder var themedContent: String { get }
     var js: Bool { get }
     var mathPage: Bool { get }
     var title: String { get }

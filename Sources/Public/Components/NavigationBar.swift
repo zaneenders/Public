@@ -10,6 +10,7 @@ struct NavigationBar: PageComponent {
 
     var links: String {
         var out = ""
+        // How do I add private routes here?
         for page in Home().pages {
             out.append(page.pageLink)
         }

@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct Favorites: ZaneWebPage {
-    var markup: String {
+struct Favorites: BaseThemePage {
+    var themedContent: String {
         "A Page of some of my favorite content on the web"
         "hopefully not broken links"
     }

@@ -1,12 +1,12 @@
 import WebsiteBuilder
 
-struct Scribe: ZaneWebPage {
+struct Scribe: BaseThemePage {
 
     var subPages: [WebPage.Type] = [
         ScribeManifesto.self
     ]
 
-    var markup: String {
+    var themedContent: String {
         content
     }
 

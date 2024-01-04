@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct FavoriteVideos: ZaneWebPage {
-    var markup: String {
+struct FavoriteVideos: BaseThemePage {
+    var themedContent: String {
         var output = ""
         output.append(h2("Favorite Videos"))
         for fav in FavoriteVideos.favoriteVideos {

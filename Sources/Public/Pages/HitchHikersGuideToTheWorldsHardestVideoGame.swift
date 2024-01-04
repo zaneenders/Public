@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct AHitchHikersGuideToTheWorldsHardestVideoGame: ZaneWebPage {
-    var markup: String {
+struct AHitchHikersGuideToTheWorldsHardestVideoGame: BaseThemePage {
+    var themedContent: String {
         content
     }
 

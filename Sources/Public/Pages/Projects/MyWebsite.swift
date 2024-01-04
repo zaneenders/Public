@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct MyWebsite: ZaneWebPage {
-    var markup: String {
+struct MyWebsite: BaseThemePage {
+    var themedContent: String {
         content
     }
 

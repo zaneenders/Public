@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct FavoriteArticles: ZaneWebPage {
-    var markup: String {
+struct FavoriteArticles: BaseThemePage {
+    var themedContent: String {
         h3("Computer Science & Programming related things")
         unorderedList {
             newTabLink(

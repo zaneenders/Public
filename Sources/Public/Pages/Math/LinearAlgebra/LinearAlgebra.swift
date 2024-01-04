@@ -5,9 +5,9 @@ import WebsiteBuilder
 !!! Don't forget to use bookshelf for your HW because the problems are
 different.
 */
-struct LinearAlgebra: ZaneWebPage {
+struct LinearAlgebra: BaseThemePage {
 
-    var markup: String {
+    var themedContent: String {
         h2("Linear Algebra")
         #if DEBUG
             Question("Is there an implicit zeros wrapping around the matrix")

@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
-struct ScribeManifesto: ZaneWebPage {
-    var markup: String {
+struct ScribeManifesto: BaseThemePage {
+    var themedContent: String {
         content
     }
 

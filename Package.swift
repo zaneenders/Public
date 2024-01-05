@@ -23,7 +23,8 @@ let package = Package(
         .target(
             name: "Public",
             dependencies: [
-                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder")
+                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder"),
+                "Tags"
             ]),
         // Move this to _WebsiteBuilder?
         .target(

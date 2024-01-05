@@ -1,22 +1,20 @@
 import WebsiteBuilder
 
-typealias SubPage = BaseThemePage
-@available(*, deprecated, message: "Move into SubPage")
-public protocol BaseThemePage: WebPage {
-    @_Builder var themedContent: String { get }
+public protocol BasePage: WebPage {
+    @_Builder var body: String { get }
     var js: Bool { get }
     var mathPage: Bool { get }
     var title: String { get }
-    var pages: [BaseThemePage.Type] { get }
+    var pages: [BasePage.Type] { get }
 }
 
-extension BaseThemePage {
+extension BasePage {
 
     public static var pageLink: String {
         makeButton(Self.self)
     }
 
-    public var pages: [BaseThemePage.Type] {
+    public var pages: [BasePage.Type] {
         []
     }
 
@@ -42,8 +40,7 @@ extension BaseThemePage {
         <html lang="en">
         \(headHTML)
         <body>
-        \(NavigationBar().contents)
-        \(themedContent)
+        \(body)
         </body>
         </html>
         """

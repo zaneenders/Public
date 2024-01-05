@@ -12,12 +12,12 @@ let package = Package(
             targets: ["Public", "Tags"])
     ],
     dependencies: [
-        .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder")
         /*
+        .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder")
+       */
         .package(
             url: "https://github.com/zaneenders/_WebsiteBuilder.git",
-            from: "0.1.1"),
-       */
+            from: "0.1.2")
     ],
     targets: [
         .target(

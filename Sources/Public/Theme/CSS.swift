@@ -1,6 +1,15 @@
 import Colors
 import WebsiteBuilder
 
+/*
+how many classes or types of CSS styling are there.
+- color
+- spacing
+- sizing
+- layout (left right center)
+- ...
+*/
+
 enum CustomCSS: CaseIterable {
     case card
     case blogContent

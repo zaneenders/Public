@@ -6,7 +6,7 @@ struct Blog: BaseThemePage {
     }
 
     var pages: [BaseThemePage.Type] = [
-        MyNewWebsite.self
+        // MyNewWebsite.self
     ]
 
     func posts() -> String {

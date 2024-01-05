@@ -6,7 +6,6 @@ struct Projects: BaseThemePage {
     }
 
     var subPages: [WebPage.Type] = [
-        Scribe.self,
-        MyWebsite.self,
+        Scribe.self
     ]
 }

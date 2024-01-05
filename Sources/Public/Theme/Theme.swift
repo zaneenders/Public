@@ -6,6 +6,11 @@ enum LinkType {
     case site(URLString)
 }
 
+/*
+TODO need different types of buttons
+- well I want the design of all buttons to look the same
+*/
+
 func button(_ label: String, to type: LinkType) -> String {
     switch type {
     case .page(let url):
@@ -20,5 +25,9 @@ func button(_ label: String, to type: LinkType) -> String {
 }
 
 func makeButton(_ page: BaseThemePage.Type) -> String {
+    return button("\(page.self)", to: .page(page.url))
+}
+
+func makeButton(_ page: BasePage.Type) -> String {
     return button("\(page.self)", to: .page(page.url))
 }

@@ -2,6 +2,8 @@ import Tags
 import WebsiteBuilder
 
 struct Math: BaseThemePage {
+    let js: Bool = true
+    let mathPage: Bool = true
 
     var themedContent: String {
         h2("Math related things here")

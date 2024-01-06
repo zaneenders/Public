@@ -1,7 +1,7 @@
 import WebsiteBuilder
 
 typealias SubPage = BaseThemePage
-@available(*, deprecated, message: "Move into SubPage")
+// @available(*, deprecated, message: "Move into SubPage")
 public protocol BaseThemePage: WebPage {
     @_Builder var themedContent: String { get }
     var js: Bool { get }

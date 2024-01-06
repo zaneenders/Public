@@ -11,7 +11,7 @@ struct Matrix: BaseThemePage {
 
 extension Matrix {
 
-    @available(*, deprecated, message: "Testing")
+    // @available(*, deprecated, message: "Testing")
     init(_ matrix2d: [[Int]]) {
         /*
         m x n

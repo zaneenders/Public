@@ -12,19 +12,19 @@ let package = Package(
             targets: ["Public", "Tags"])
     ],
     dependencies: [
-        /*
         .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder")
-       */
+        /*
         .package(
             url: "https://github.com/zaneenders/_WebsiteBuilder.git",
-            from: "0.1.2")
+            revision: "fb8d1cb"),
+       */
     ],
     targets: [
         .target(
             name: "Public",
             dependencies: [
                 .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder"),
-                "Tags"
+                "Tags",
             ]),
         // Move this to _WebsiteBuilder?
         .target(

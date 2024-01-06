@@ -1,6 +1,7 @@
 import WebsiteBuilder
 
 public struct Home: BasePage, RootPage {
+    public let js: Bool = true
 
     // button style = 0.25em 0.25em 0 0.25em
     private let githubLogo = """

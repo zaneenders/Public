@@ -1,6 +1,6 @@
 import WebsiteBuilder
 
-@available(*, deprecated, message: "Move into WebsiteBuilder")
+//@available(*, deprecated, message: "Move into WebsiteBuilder")
 @resultBuilder
 public enum _Builder {
     public static func buildBlock(_ components: any PageComponent...)

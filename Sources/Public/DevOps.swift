@@ -4,4 +4,7 @@ Tip for Swift dev ops. Use git commits for version control instead of so it's ea
 /*
 to get last commit hash short
 git rev-parse --short HEAD
+
+undo last commit
+git reset --soft HEAD~
 */

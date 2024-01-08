@@ -5,7 +5,7 @@ public struct HomeBlock: Block {
     public init() {}
 
     @State var count: Int = 0
-    @State var count2: Int = 0
+    // @State var count2: Int = 0
 
     var s: Bool {
         count.isMultiple(of: 2)
@@ -18,9 +18,11 @@ public struct HomeBlock: Block {
         Text("Zane Was here \(s)")
         Text("Welcome to the rabbit hole")
         Nested(count: $count)
+        /*
         Button("Button \(count2)") {
             count2 += 1
         }
+        */
     }
 }
 

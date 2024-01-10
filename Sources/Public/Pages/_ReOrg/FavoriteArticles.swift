@@ -13,6 +13,7 @@ struct FavoriteArticles: BaseThemePage {
             newTabLink(
                 "Text Rendering hates you too",
                 to: "https://faultlore.com/blah/text-hates-you/")
+            // https://bernsteinbear.com/blog/typed-python/
         }
         h4(aTag("Swift related articles", to: _Swift.url))
     }

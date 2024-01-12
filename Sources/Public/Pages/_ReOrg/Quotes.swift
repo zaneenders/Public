@@ -18,6 +18,7 @@ struct Qoutes: BaseThemePage {
         Qoute(
             "The meaning of life is self respect", "Andrew Bustamante",
             podcastLink, why)
+        Qoute("if you can't be on time be early", "Brad Sax")
     }
 
     init() {}

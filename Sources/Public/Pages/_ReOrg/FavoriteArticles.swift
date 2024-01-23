@@ -16,5 +16,12 @@ struct FavoriteArticles: BaseThemePage {
             // https://bernsteinbear.com/blog/typed-python/
         }
         h4(aTag("Swift related articles", to: _Swift.url))
+        h4("Operating Systems")
+        unorderedList {
+            newTabLink(
+                    "Midori",
+                    to: "https://joeduffyblog.com/2015/11/03/blogging-about-midori/")
+        }
     }
 }
+

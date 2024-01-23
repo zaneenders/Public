@@ -1,4 +1,5 @@
 import WebsiteBuilder
+/*
 
 // Needs to be public so the server can setup from there
 public struct HomeBlock: Block {
@@ -32,3 +33,4 @@ struct Nested: Block {
         Text("Nested \(count)")
     }
 }
+*/

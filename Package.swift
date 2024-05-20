@@ -1,35 +1,26 @@
-// swift-tools-version: 5.9
-
+// swift-tools-version: 5.10
 import PackageDescription
-
-// TODO move blog post into here
 
 let package = Package(
     name: "Public",
+    platforms: [
+        .macOS("14.0"), .iOS("16.0"), .watchOS("9.0"), .tvOS("16.0"),
+        .visionOS("1.0"),
+    ],
     products: [
-        .library(
-            name: "Public",
-            targets: ["Public", "Tags"])
+        .library(name: "Public", targets: ["Public"])
     ],
     dependencies: [
-        // .package(name: "_WebsiteBuilder", path: "../_WebsiteBuilder")
+        // .package(name: "Scribe", path: "../Scribe")
         .package(
-            url: "https://github.com/zaneenders/_WebsiteBuilder.git",
-            revision: "fb8d1cb"),
+            url: "https://github.com/zaneenders/Scribe.git",
+            revision: "ab502eb")
     ],
     targets: [
         .target(
             name: "Public",
             dependencies: [
-                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder"),
-                "Tags",
-            ]),
-        // Move this to _WebsiteBuilder?
-        .target(
-            name: "Tags",
-            dependencies: [
-                .product(name: "_WebsiteBuilder", package: "_WebsiteBuilder")
-            ]),
-        //.target(name: "ZaneEnders")
+                .product(name: "Scribe", package: "Scribe")
+            ])
     ]
 )

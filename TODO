@@ -1,2 +1,4 @@
 TODO
 - Move remaining _Public pages to Public/Scribe API
+- Display Resume
+    - [HTML to PDF to download resume](https://github.com/eKoopmans/html2pdf.js)

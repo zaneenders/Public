@@ -14,7 +14,7 @@ let package = Package(
         // .package(name: "Scribe", path: "../Scribe")
         .package(
             url: "https://github.com/zaneenders/Scribe.git",
-            revision: "ad3a012")
+            revision: "2e282e4")
     ],
     targets: [
         .target(

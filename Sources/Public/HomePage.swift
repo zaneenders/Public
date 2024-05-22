@@ -1,6 +1,6 @@
 import Scribe
 
-public struct HomePage: BlockProgram {
+public struct HomePage: BlockPage {
 
     public init() {}
 
@@ -11,6 +11,10 @@ public struct HomePage: BlockProgram {
         Text("Zane Enders").selected()
         Text("Welcome to my website. It's a subtly different 😉.")
         HGroup {
+            Open("Other Page", .page(OtherPage.self))
+            Open("Git Tips", .page(GitTips.self))
+        }
+        HGroup {
             Button("left: \(left)") {
                 left += 1
             }
@@ -18,7 +22,5 @@ public struct HomePage: BlockProgram {
                 right += 1
             }
         }
-        SwitchTo("Other Page", .program(OtherPage.self))
-        SwitchTo("Git Tips", .program(GitTips.self))
     }
 }

@@ -1,10 +1,10 @@
 import Scribe
 
-struct GitTips: BlockProgram {
+struct GitTips: BlockPage {
     @State var count: Int = 0
     var component: some Block {
         Text("Git Tips").selected()
-        SwitchTo("Zane Enders", .program(HomePage.self))
+        Open("Zane Enders", .page(HomePage.self))
         //
         Text("Show last short commit hash")
         Text("git rev-parse --short HEAD")

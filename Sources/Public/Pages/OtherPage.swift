@@ -1,6 +1,6 @@
 import Scribe
 
-struct OtherPage: BlockProgram {
+struct OtherPage: BlockPage {
     @State var count: Int = 0
     var component: some Block {
         Text("Other Page").selected()
@@ -12,6 +12,6 @@ struct OtherPage: BlockProgram {
         } else {
             Text("Odd")
         }
-        SwitchTo("Zane Enders", .program(HomePage.self))
+        Open("Zane Enders", .page(HomePage.self))
     }
 }

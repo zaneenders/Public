@@ -1,10 +1,9 @@
 import Scribe
 
 struct GitTips: BlockPage {
-    @State var count: Int = 0
     var component: some Block {
+        Menu()
         Text("Git Tips").selected()
-        Open("Zane Enders", .page(HomePage.self))
         //
         Text("Show last short commit hash")
         Text("git rev-parse --short HEAD")

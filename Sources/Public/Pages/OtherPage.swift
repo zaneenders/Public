@@ -3,6 +3,7 @@ import Scribe
 struct OtherPage: BlockPage {
     @State var count: Int = 0
     var component: some Block {
+        Menu()
         Text("Other Page").selected()
         Button("\(count)") {
             count += 1
@@ -12,6 +13,5 @@ struct OtherPage: BlockPage {
         } else {
             Text("Odd")
         }
-        Open("Zane Enders", .page(HomePage.self))
     }
 }

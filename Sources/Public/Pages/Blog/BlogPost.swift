@@ -7,7 +7,6 @@ protocol BlogPost: BlockPage {
 
 extension BlogPost {
     var component: some Block {
-        // TODO VGroup
         Group(.vertical) {
             Menu()
             BlogPostMenu()

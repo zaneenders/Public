@@ -6,7 +6,7 @@ struct Menu: Block {
         Group(.horizontal) {
             Open("Other Page", .page(OtherPage.self))
             Open("Git Tips", .page(GitTips.self))
-            Open("Browser Tips", .page(BrowserTips.self))
+            // Open("Browser Tips", .page(BrowserTips.self))
             Open("Blog", .page(BlogPage.self))
         }
     }

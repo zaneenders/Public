@@ -10,7 +10,7 @@ public struct HomePage: BlockPage {
         Menu()
         Text("Zane Enders").selected()
         Text("Welcome to my website. It's a subtly different 😉.")
-        HGroup {
+        Group(.horizontal) {
             Button("left: \(left)") {
                 left += 1
             }

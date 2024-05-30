@@ -11,6 +11,7 @@ struct Menu: Block {
             #endif
             Open("Blog", .page(BlogPage.self))
             Open("Favorite Quotes", .page(FavoriteQuotesPage.self))
+            Open("Programming Languages", .page(ProgrammingLanguages.self))
         }
     }
 }

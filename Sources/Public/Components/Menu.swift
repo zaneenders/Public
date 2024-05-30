@@ -10,6 +10,7 @@ struct Menu: Block {
                 Open("Browser Tips", .page(BrowserTips.self))
             #endif
             Open("Blog", .page(BlogPage.self))
+            Open("Favorite Quotes", .page(FavoriteQuotesPage.self))
         }
     }
 }

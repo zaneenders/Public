@@ -14,13 +14,30 @@ let package = Package(
         // .package(name: "Scribe", path: "../Scribe")
         .package(
             url: "https://github.com/zaneenders/Scribe.git",
-            revision: "2307295")
+            revision: "7225cbf")
     ],
     targets: [
         .target(
             name: "Public",
             dependencies: [
                 .product(name: "Scribe", package: "Scribe")
+            ]),
+        .executableTarget(
+            name: "ZaneEnders",
+            dependencies: [
+                "Public",
+                .product(name: "Scribe", package: "Scribe"),
+            ],
+            swiftSettings: [
+                .enableUpcomingFeature("BareSlashRegexLiterals"),
+                .enableUpcomingFeature("ConciseMagicFile"),
+                .enableUpcomingFeature("ExistentialAny"),
+                .enableUpcomingFeature("ForwardTrailingClosures"),
+                .enableUpcomingFeature("ImplicitOpenExistentials"),
+                .enableUpcomingFeature("StrictConcurrency"),
+                .unsafeFlags([
+                    "-warn-concurrency", "-enable-actor-data-race-checks",
+                ]),
             ])
     ]
 )

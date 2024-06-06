@@ -11,7 +11,7 @@ struct ZaneEnders: ScribeWS {
             Boarder(.yellow),
         ])
     let server = ServerConfig(
-        host: .ipv4("127.0.0.1"), port: 42069,
+        host: .ipv4("0.0.0.0"), port: 42069,
         domain: "zaneenders.com")
     let page: (any BlockPage.Type) = HomePage.self
 }

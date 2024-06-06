@@ -11,10 +11,10 @@ let package = Package(
         .library(name: "Public", targets: ["Public"])
     ],
     dependencies: [
-        // .package(name: "Scribe", path: "../Scribe")
-        .package(
-            url: "https://github.com/zaneenders/Scribe.git",
-            branch: "main")
+        .package(name: "Scribe", path: "../Scribe")
+        // .package(
+        //     url: "https://github.com/zaneenders/Scribe.git",
+        //     branch: "main")
     ],
     targets: [
         .target(
@@ -38,6 +38,6 @@ let package = Package(
                 .unsafeFlags([
                     "-warn-concurrency", "-enable-actor-data-race-checks",
                 ]),
-            ])
+            ]),
     ]
 )

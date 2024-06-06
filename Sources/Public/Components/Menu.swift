@@ -4,7 +4,10 @@ struct Menu: Block {
     var component: some Block {
         Open("Home", .page(HomePage.self))
         Group(.horizontal) {
-            Open("Other Page", .page(OtherPage.self))
+            Open("Other Page", .page(OtherPage.self)).style([
+                BackgroundColor(.green),
+                Boarder(.pink),
+            ])
             Open("Git Tips", .page(GitTips.self))
             #if DEBUG
                 Open("Browser Tips", .page(BrowserTips.self))

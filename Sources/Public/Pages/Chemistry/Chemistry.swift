@@ -28,7 +28,7 @@ struct FlashCards: BlockPage {
     @State var index: Int = 0
     @State var side: Bool = false
     @State var display: String = "Press Next or Flip"
-    
+
     var component: some Block {
         Menu()
         Text("Oxoanions of the Halides").selected()

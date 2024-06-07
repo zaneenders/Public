@@ -1,4 +1,5 @@
 import Scribe
+import WSServer
 
 public struct HomePage: BlockPage {
 
@@ -20,3 +21,13 @@ public struct HomePage: BlockPage {
         }
     }
 }
+
+// Used for Server setup/ config
+public let myDetails = SiteDetails(
+    title: "Zane Was Here",
+    selected: [
+        BackgroundColor(.blue),
+        Boarder(.yellow),
+    ])
+
+public let url = "zaneenders.com"

@@ -4,14 +4,9 @@ import WSServer
 
 @main
 struct ZaneEnders: ScribeWS {
-    let details = SiteDetails(
-        title: "Zane Was Here",
-        selected: [
-            BackgroundColor(.blue),
-            Boarder(.yellow),
-        ])
+    let details = myDetails
     let server = ServerConfig(
         host: .ipv4("0.0.0.0"), port: 42069,
-        domain: "zaneenders.com")
+        domain: url)
     let page: (any BlockPage.Type) = HomePage.self
 }

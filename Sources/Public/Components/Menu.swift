@@ -15,7 +15,7 @@ struct Menu: Block {
             Open("Blog", .page(BlogPage.self))
             Open("Favorite Quotes", .page(FavoriteQuotesPage.self))
             Open("Programming Languages", .page(ProgrammingLanguages.self))
-            Open("Chemistry", .page(Chemistry.self))
+            Open("Chemistry", .page(FlashCards.self))
         }
     }
 }

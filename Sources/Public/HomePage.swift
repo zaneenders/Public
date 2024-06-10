@@ -23,10 +23,12 @@ public struct HomePage: BlockPage {
     }
 }
 
-// Used for Server setup/ config,
-// Maybe this could be split out as a theme?
-public let myDetails = SiteDetails(
-    title: "Zane Was Here",
-    selected: DefaultTheme.selected, toplevel: DefaultTheme.background)
+public enum MyDetails {
+    // Used for Server setup/ config,
+    // Maybe this could be split out as a theme?
+    public static let site = SiteDetails(
+        title: "Zane Was Here",
+        selected: DefaultTheme.selected, toplevel: DefaultTheme.background)
 
-public let url = "zaneenders.com"
+    public static let url = "zaneenders.com"
+}

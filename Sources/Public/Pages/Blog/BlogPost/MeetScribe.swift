@@ -79,6 +79,10 @@ struct MeetScribe: BlogPost {
         """
         I don't have much more than a bunch of ideas of how things could be better and a pretty big drive to try and make it better and a little bit of hope that if enough things go right that we can actually move past our current iterations of how we interact and spend our time on our computers.
         """
-        Link("Source file link", url: "https://github.com/zaneenders/Scribe")
+        Link(
+            "Source file link",
+            url:
+                "https://github.com/zaneenders/Public/blob/scribe/Sources/Public/Pages/Blog/BlogPost/MeetScribe.swift"
+        )
     }
 }

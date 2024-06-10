@@ -12,14 +12,10 @@ public struct HomePage: BlockPage {
         Menu()
         Text("Zane Enders").selected()
         Text("Welcome to my website. It's a subtly different 😉.")
-        Group(.horizontal) {
-            Button("left: \(left)") {
-                left += 1
-            }
-            Button("right: \(right)") {
-                right += 1
-            }
-        }
+        Action("TODO add inline Link")
+        Text("Check out my latest blog post.")
+        Open("Meet Scribe", .page(MeetScribe.self)).style(
+            DefaultTheme.linkStyle)
     }
 }
 

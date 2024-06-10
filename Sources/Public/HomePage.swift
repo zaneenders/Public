@@ -16,6 +16,7 @@ public struct HomePage: BlockPage {
         Text("Check out my latest blog post.")
         Open("Meet Scribe", .page(MeetScribe.self)).style(
             DefaultTheme.linkStyle)
+        Action("TODO Fix very buggy display of blog post.")
     }
 }
 

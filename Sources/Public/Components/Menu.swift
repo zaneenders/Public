@@ -5,8 +5,8 @@ struct Menu: Block {
         Open("Home", .page(HomePage.self))
         Group(.horizontal) {
             Open("Other Page", .page(OtherPage.self)).style([
-                BackgroundColor(.green),
-                Boarder(.pink),
+                .BackgroundColor(.green),
+                .Boarder(.pink, .px(0)),
             ])
             Open("Git Tips", .page(GitTips.self))
             #if DEBUG

@@ -6,7 +6,7 @@ struct Quote: Block {
     let who: String
     var component: some Block {
         Group(.horizontal) {
-            Text(tile).style([ForegroundColor(.blue)])
+            Text(tile).style([.ForegroundColor(.blue)])
             Text(":")
             Text(quote)
             Text("-")

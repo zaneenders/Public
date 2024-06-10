@@ -22,12 +22,13 @@ public struct HomePage: BlockPage {
     }
 }
 
-// Used for Server setup/ config
+// Used for Server setup/ config,
+// Maybe this could be split out as a theme?
 public let myDetails = SiteDetails(
     title: "Zane Was Here",
     selected: [
-        BackgroundColor(.blue),
-        Boarder(.yellow),
-    ])
+        .BackgroundColor(.blue),
+        .Boarder(.yellow, .px(0)),
+    ], toplevel: [.BackgroundColor(.black)])
 
 public let url = "zaneenders.com"

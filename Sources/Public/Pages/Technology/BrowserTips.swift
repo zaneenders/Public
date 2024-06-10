@@ -1,4 +1,5 @@
 import Scribe
+import _ScribeExtras
 
 struct BrowserTips: BlockPage {
     @State var count: Int = 0
@@ -6,6 +7,6 @@ struct BrowserTips: BlockPage {
         Menu()
         Text("Browser Tips").selected()
         Text("Link to this to check for TabNabbing")
-        Open("Link", .link(url: "https://mathiasbynens.be/demo/opener"))
+        Link("Example Link", url: "https://mathiasbynens.be/demo/opener")
     }
 }

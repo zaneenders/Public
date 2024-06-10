@@ -1,5 +1,6 @@
 import Scribe
 import WSServer
+import _ScribeExtras
 
 public struct HomePage: BlockPage {
 
@@ -26,9 +27,6 @@ public struct HomePage: BlockPage {
 // Maybe this could be split out as a theme?
 public let myDetails = SiteDetails(
     title: "Zane Was Here",
-    selected: [
-        .BackgroundColor(.blue),
-        .Boarder(.yellow, .px(0)),
-    ], toplevel: [.BackgroundColor(.black)])
+    selected: DefaultTheme.selected, toplevel: DefaultTheme.background)
 
 public let url = "zaneenders.com"

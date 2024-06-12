@@ -21,9 +21,8 @@ struct GitRebase: Block {
         Group(.vertical) {
             Text("Rebase <branch> onto main").style(defaultStyles)
             Text("git checkout <branch>").style(defaultStyles)
-            Text("git rebase main").style(defaultStyles)
-            Text("Resolve conflicts").style(defaultStyles)
+            Text("git pull --rebase origin main").style(defaultStyles)
+            Text("git pull --rebase").style(defaultStyles)
         }.style([.Boarder(.white, .px(6))])
-        Question("How do I do this correctly?!!")
     }
 }

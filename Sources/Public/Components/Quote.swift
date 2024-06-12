@@ -11,7 +11,7 @@ struct Quote: Block {
             Text(quote)
             Text("-")
             Text(who)
-        }.style([.Boarder(.green,.px(0))])
+        }.style([.Boarder(.green, .px(0))])
     }
 
     init(_ tile: String, _ quote: String, _ who: String) {

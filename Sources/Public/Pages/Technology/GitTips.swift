@@ -24,5 +24,9 @@ struct GitRebase: Block {
             Text("git pull --rebase origin main").style(defaultStyles)
             Text("git pull --rebase").style(defaultStyles)
         }.style([.Boarder(.white, .px(6))])
+        """
+        When you ask for a review.
+        When building one PR off another PR, When the base changes you should rebase the others
+        """
     }
 }

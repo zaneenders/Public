@@ -16,6 +16,11 @@ struct GitTips: BlockPage {
     }
 }
 
+/*
+git status --porcelain
+Used to list out changed files
+*/
+
 struct GitRebase: Block {
     var component: some Block {
         Group(.vertical) {

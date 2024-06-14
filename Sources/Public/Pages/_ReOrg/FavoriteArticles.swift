@@ -19,9 +19,9 @@ struct FavoriteArticles: BaseThemePage {
         h4("Operating Systems")
         unorderedList {
             newTabLink(
-                    "Midori",
-                    to: "https://joeduffyblog.com/2015/11/03/blogging-about-midori/")
+                "Midori",
+                to: "https://joeduffyblog.com/2015/11/03/blogging-about-midori/"
+            )
         }
     }
 }
-

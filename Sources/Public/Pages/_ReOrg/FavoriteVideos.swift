@@ -11,6 +11,9 @@ struct FavoriteVideos: BaseThemePage {
     }
 
     private static let favoriteVideos = [
+        "Truth in game design": "https://www.youtube.com/watch?v=C5FUtrmO7gI",
+        "Game devs are drowning in complicated proprietary systems":
+            "https://www.youtube.com/watch?v=AtlO5Zne6ec",
         "RubyConf Mini 2022: Keynote: Learning DNS by Julia Evans":
             "https://www.youtube.com/watch?v=tsxjNsFu_2g",
         "You can be a kernel hacker! by Julia Evans":

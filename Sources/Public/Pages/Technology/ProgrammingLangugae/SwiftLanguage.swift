@@ -21,11 +21,11 @@ struct DocCGitHubPages: BlockPage {
         name: DocC GitHub action
         on:
         push:
-        
+
         concurrency:
         group: "pages"
         cancel-in-progress: false
-        
+
         jobs:
         build:
             runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ struct DocCGitHubPages: BlockPage {
             uses: actions/checkout@v3
             with:
                 fetch-depth: 0
-        
+
             - name: Set up Swift environment
             uses: swift-actions/setup-swift@v2
 
@@ -53,7 +53,7 @@ struct DocCGitHubPages: BlockPage {
                 --transform-for-static-hosting \
                 --hosting-base-path scribe \
                 --include-extended-types
-        
+
             - name: Commit and push generated documentation
             run: |
                 cd gh-pages

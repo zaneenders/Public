@@ -9,5 +9,10 @@ struct FavoriteQuotesPage: BlockPage {
             "Your code is good as long as it works and no one else looks at it.",
             "Zane Enders"
         ).selected()
+        Quote(
+            "Python",
+            "Hidden cost, the language",
+            "Bryn Curry"
+        )
     }
 }

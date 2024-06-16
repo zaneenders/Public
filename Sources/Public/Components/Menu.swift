@@ -6,7 +6,6 @@ struct Menu: Block {
         Group(.horizontal) {
             Open("Blog", .page(BlogPage.self))
             Open("Favorite Quotes", .page(FavoriteQuotesPage.self))
-            Open("💻", .page(TechnologyPage.self))
         }
     }
 }
